@@ -7,4 +7,14 @@ class Model
     @email = email
     @age = age
   end
+
+  def as_json
+    {
+      id: @id,
+      name: @name,
+      ph_no: @ph_no,
+      email: @email,
+      age: @age
+    }
+  end
 end

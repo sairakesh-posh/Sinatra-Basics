@@ -42,10 +42,10 @@ class Service
   end
 
   def update_by_id(book_id, book)
-    unless @db.update_by_id(book_id, book).nil?
-      "Book is updated successfully!"
+    if @db.update_by_id(book_id, book).nil?
+      false
     else
-      "Please enter a valid book id"
+      true
     end
   end
 end
