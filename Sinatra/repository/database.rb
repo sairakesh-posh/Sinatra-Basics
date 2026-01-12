@@ -3,14 +3,14 @@ class DataBase
     @data = []
     @count = 1
   end
-  @instance = nil
+  # @instance = nil
 
-  def self.get_instance
-    if @instance.nil?
-      @instance = DataBase.new
-    end
-    @instance
-  end
+  # def self.get_instance
+  #   if @instance.nil?
+  #     @instance = DataBase.new
+  #   end
+  #   @instance
+  # end
 
   def add_book(book)
     @data << (book)

@@ -1,21 +1,21 @@
 require_relative '../repository/database'
 
 class Service
-  @service = nil
-  def initialize(database)
-    @db = database
-  end
-
-  # def initialize
-  #   @db = DataBase.get_instance
+  # @service = nil
+  # def initialize(database)
+  #   @db = database
   # end
 
-  def self.get_instance
-    if @service.nil?
-      @service = Service.new
-    end
-    @service
+  def initialize(db)
+    @db = db
   end
+
+  # def self.get_instance
+  #   if @service.nil?
+  #     @service = Service.new
+  #   end
+  #   @service
+  # end
 
   def add(book)
     @db.add_book(book)
