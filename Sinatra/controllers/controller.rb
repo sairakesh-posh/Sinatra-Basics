@@ -1,4 +1,4 @@
-require_relative '../models/book'
+require_relative '../models/user'
 require_relative '../services/book_service'
 
 class Controller < Sinatra::Base
@@ -29,32 +29,46 @@ class Controller < Sinatra::Base
   end
 
   post '/book' do
-    obj = Model.new(
-      settings.service.get_id,
-      @data['name'],
-      @data['ph_no'],
-      @data['email'],
-      @data['age'].to_i
-    )
-    settings.service.add(obj)
-    obj.as_json.to_json
+    # obj = Model.new(
+    #   settings.service.get_id,
+    #   @data['name'],
+    #   @data['ph_no'],
+    #   @data['email'],
+    #   @data['age'].to_i
+    # )
+    begin
+      settings.service.add(@data)
+      @data.to_json
+    rescue => error
+      status 500
+      {err: error }.to_json
+    end
   end
 
   delete '/book/:id' do
-    {
-      res: settings.service.delete(params['id'].to_i)
-    }.to_json
+    if settings.service.delete(params['id']) == true
+      status 200
+      {
+        response: 'ok'
+      }.to_json
+    else
+      status 404
+      {
+        response: 'not found'
+      }.to_json
+    end
   end
 
   get '/book' do
-    settings.service.print_all.map{|item| item.as_json}.to_json
+
+    settings.service.print_all.to_json
     # settings.service.print_all.map do |book|
     #   "ID : #{book.id}, Name : #{book.name}, Ph_No: #{book.ph_no}, Email : #{book.email}, Age: #{book.age}"
     # end.join("\n")
   end
 
   get '/book/:id' do
-    book = settings.service.find_by_id(params[:id].to_i)
+    book = settings.service.find_by_id(params[:id])
     if book.nil?
       status 400
       {
@@ -68,14 +82,8 @@ class Controller < Sinatra::Base
   end
 
   put '/book' do
-    if settings.service.update_by_id(@data['id'].to_i, Model.new(
-      @data['id'].to_i,
-      @data['name'],
-      @data['ph_no'],
-      @data['email'],
-      @data['age'].to_i
-    ))
-      settings.service.find_by_id(@data['id'].to_i).as_json.to_json
+    if settings.service.update_by_id(@data['id'], @data)
+      settings.service.find_by_id(@data['id']).as_json.to_json
     else
       status 400
       {

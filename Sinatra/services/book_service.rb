@@ -1,4 +1,4 @@
-require_relative '../repository/database'
+require_relative '../models/book_mongo'
 
 class Service
   # @service = nil
@@ -6,9 +6,9 @@ class Service
   #   @db = database
   # end
 
-  def initialize(db)
-    @db = db
-  end
+  # def initialize(db)
+  #   @db = db
+  # end
 
   # def self.get_instance
   #   if @service.nil?
@@ -18,34 +18,43 @@ class Service
   # end
 
   def add(book)
-    @db.add_book(book)
+    Book.create!(book)
   end
 
   def delete(id)
-    if @db.delete_by_id(id) ==  true
-      "Book is successfully deleted!"
-    else
-      "Please enter a valid book id"
+    begin
+      book = Book.find_by(_id: id)
+      book.destroy
+      true
+    rescue => error
+      false
     end
   end
 
   def print_all
-    @db.print_data
+    Book.all
   end
 
   def find_by_id(id)
-    @db.find_by_id(id)
+    begin
+      Book.find_by(_id: id)
+    rescue => error
+      nil
+    end
+
   end
 
-  def get_id
-    @db.get_id
-  end
+  # def get_id
+  #   @db.get_id
+  # end
 
   def update_by_id(book_id, book)
-    if @db.update_by_id(book_id, book).nil?
-      false
-    else
+    begin
+      book_old = Book.find_by(_id: book_id)
+      book_old.update(book)
       true
+    rescue => error
+      false
     end
   end
 end
