@@ -18,15 +18,17 @@ class Service
   # end
 
   def add(book)
-    Book.create!(book)
+    book_new = Book.create!(book)
+    BookSearch.index(book_new)
   end
 
   def delete(id)
     begin
-      book = Book.find_by(_id: id)
+      book = Book.find_by(id: id)
       book.destroy
       true
     rescue => error
+      puts error
       false
     end
   end
@@ -37,7 +39,7 @@ class Service
 
   def find_by_id(id)
     begin
-      Book.find_by(_id: id)
+      Book.find_by(id: id)
     rescue => error
       nil
     end
@@ -50,11 +52,15 @@ class Service
 
   def update_by_id(book_id, book)
     begin
-      book_old = Book.find_by(_id: book_id)
+      book_old = Book.find_by(id: book_id)
       book_old.update(book)
       true
     rescue => error
       false
     end
+  end
+
+  def test
+    Book.find_by(title: "The Hobbit")
   end
 end

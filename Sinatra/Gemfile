@@ -4,3 +4,5 @@ gem 'sinatra'
 gem 'mongoid'
 gem 'puma'
 gem "rackup", "~> 2.3"
+gem 'elasticsearch'
+gem 'dotenv'

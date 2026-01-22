@@ -1,5 +1,6 @@
 require_relative '../models/user'
 require_relative '../services/book_service'
+require_relative '../services/book_search'
 
 class Controller < Sinatra::Base
   before do
@@ -12,7 +13,7 @@ class Controller < Sinatra::Base
       rescue => e
         halt(400, {
           response: 'JSON format is expected',
-             error: e
+          error: e
         }.to_json
         )
       end
@@ -47,6 +48,7 @@ class Controller < Sinatra::Base
 
   delete '/book/:id' do
     if settings.service.delete(params['id']) == true
+      BookSearch.delete(params['id'].to_s)
       status 200
       {
         response: 'ok'
@@ -90,5 +92,21 @@ class Controller < Sinatra::Base
         err: 'No Valid Book with given ID is found!'
       }.to_json
     end
+  end
+
+  get '/test' do
+    settings.service.test.to_json
+  end
+
+  get '/search' do
+    begin
+      BookSearch.search(params[:query])
+    rescue => error
+      puts error
+      {
+        response: 'search error'
+      }.to_json
+    end
+
   end
 end
