@@ -21,6 +21,7 @@ class Controller < Sinatra::Base
   end
 
   set :service, nil
+  set :book_search_service, nil
 
   get '/' do
     status 200
@@ -39,6 +40,7 @@ class Controller < Sinatra::Base
     # )
     begin
       settings.service.add(@data)
+      settings.book_search_service.index(@data)
       @data.to_json
     rescue => error
       status 500
@@ -48,7 +50,7 @@ class Controller < Sinatra::Base
 
   delete '/book/:id' do
     if settings.service.delete(params['id']) == true
-      BookSearch.delete(params['id'].to_s)
+      settings.book_search_service.delete(params['id'].to_s)
       status 200
       {
         response: 'ok'
@@ -100,7 +102,7 @@ class Controller < Sinatra::Base
 
   get '/search' do
     begin
-      BookSearch.search(params[:query])
+      settings.book_search_service.search(params[:query])
     rescue => error
       puts error
       {

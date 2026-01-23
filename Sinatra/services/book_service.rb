@@ -63,4 +63,17 @@ class Service
   def test
     Book.find_by(title: "The Hobbit")
   end
+
+  def find_multiple(related_ids)
+    related_books = []
+    related_ids.each do |id|
+        book = find_by_id(id)
+        if id.nil?
+          puts "Book with #{id} not found"
+          next
+        end
+        related_books << book
+    end
+    related_books.as_json.to_json
+  end
 end

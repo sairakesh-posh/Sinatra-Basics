@@ -15,7 +15,9 @@ Mongoid.load!(
 
 # DB = DataBase.new
 SERVICE = Service.new
+SEARCH_SERVICE = BookSearch.new(SERVICE)
 
 Controller.set :service, SERVICE
+Controller.set :book_search_service, SEARCH_SERVICE
 
 use Controller
