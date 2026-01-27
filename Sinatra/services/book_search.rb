@@ -1,8 +1,8 @@
+require_relative '../platform/search_helper'
+
 class BookSearch
-  def initialize(book_service)
-    @book_service = book_service
-  end
   def index(book)
+    # puts book.id
     ELASTIC_CLIENT.index(
       index: 'books',
       id: book.id.to_s,
@@ -28,93 +28,115 @@ class BookSearch
   end
 
   def search(query)
-    puts query
+    query_clean = query_cleaner(query[:query])
+    puts query_clean
+    plain_query = query[:query]
+    puts plain_query
+    genres = query[:genre]
+
+    body = {
+      query: {
+        bool:{
+          # must:{
+          #   match_all:{}
+          # },
+          should:[
+            {
+              # term:{
+              #   genre: {value: genres,
+              #           case_insensitive: true,
+              #           boost: 3}
+              # }
+
+            },
+            {
+              match_phrase:{
+                title: { query: plain_query,
+                         boost: 4 ,
+                         slop: 3}
+              }
+            },
+            {
+              match:{
+                title: {query: query_clean,
+                        boost: 2}
+              }
+            },
+            {
+              match:{
+                description: {query: plain_query, boost:2 }
+              }
+            },
+            {
+              match_phrase:{
+                author: {query: plain_query,
+                         boost: 4,
+                         slop: 3 }
+              }
+            },
+            {
+              term:{
+                author: { value: plain_query,
+                          case_insensitive: true ,
+                          boost: 1}
+              }
+            },
+          # {
+          #   term:{
+          #     genre: {
+          #       value: "Action",
+          #       # boost: 2
+          #     }
+          #   },
+          # },
+          # {
+          #   term:{
+          #     genre: {
+          #       value: "History",
+          #       # boost: 1
+          #     }
+          #   }
+          # }
+          ],
+          minimum_should_match: 1
+        }
+      },
+      sort:[
+        {
+          _score: "desc"
+        },
+        {
+          rating: {
+            order: "desc"
+          }
+        }
+      ]
+    }
+
+    should = body[:query][:bool][:should]
+    genres.each do |genre|
+      should << {
+        term: {
+          genre: {
+            value: genre,
+            case_insensitive: true,
+            boost: 3
+          }
+        }
+      }
+    end
+
+
     begin
       res = ELASTIC_CLIENT.search(
         index: 'books',
-        body: {
-          query: {
-            bool:{
-              must:{
-                match_all:{}
-              },
-              should:[
-                {
-                  term:{
-                    genre: {value: query,
-                            case_insensitive: true,
-                             boost: 3 }
-                  }
-                },
-                {
-                  match_phrase:{
-                    title: { query: query,
-                             boost: 4 ,
-                             slop: 3}
-                  }
-                },
-                {
-                  match:{
-                    title: {query: query,
-                             boost: 2}
-                  }
-                },
-                {
-                  match:{
-                    description: {query: query, boost:2 }
-                  }
-                },
-                {
-                  match_phrase:{
-                    author: {query: query,
-                              boost: 4,
-                             slop: 3 }
-                  }
-                },
-                {
-                  term:{
-                    author: { value: query,
-                              case_insensitive: true ,
-                              boost: 1}
-                  }
-                },
-                # {
-                #   term:{
-                #     genre: {
-                #       value: "Action",
-                #       # boost: 2
-                #     }
-                #   },
-                # },
-                # {
-                #   term:{
-                #     genre: {
-                #       value: "History",
-                #       # boost: 1
-                #     }
-                #   }
-                # }
-              ],
-              # minimum_should_match: 1
-            }
-          },
-          sort:[
-            {
-              _score: "desc"
-            },
-            {
-              rating: {
-                order: "desc"
-              }
-            }
-          ]
-        }
+        body: body
       )
       related_id = []
       res['hits']['hits'].each do |hit|
         related_id << hit['_id']
       end
-      @book_service.find_multiple(related_id)
+      related_id
     rescue => error
       puts error
       error.to_json
@@ -122,17 +144,17 @@ class BookSearch
   end
 
 
-  # Query cleaning is not preferred as it affects the match_phrase working
-  # def query_cleaner(query)
-  #   stop_words = ['a', 'an', 'the', 'is', 'was']
-  #   filtered_query = ''
-  #   query.split(' ').each do |word|
-  #     if stop_words.include?(word)
-  #       next
-  #     else
-  #       filtered_query += word + ' '
-  #     end
-  #   end
-  #   filtered_query
-  # end
+  #Query cleaning is not preferred as it affects the match_phrase working
+  def query_cleaner(query)
+    stop_words = ['a', 'an', 'the', 'is', 'was']
+    filtered_query = ''
+    query.split(' ').each do |word|
+      if stop_words.include?(word)
+        next
+      else
+        filtered_query += word + ' '
+      end
+    end
+    filtered_query
+  end
 end

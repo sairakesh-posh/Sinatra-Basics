@@ -18,8 +18,7 @@ class Service
   # end
 
   def add(book)
-    book_new = Book.create!(book)
-    BookSearch.index(book_new)
+    Book.create!(book)
   end
 
   def delete(id)

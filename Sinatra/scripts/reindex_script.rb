@@ -1,5 +1,5 @@
 # require_relative '' '../server'
-require 'dotenv/load'      # ✅ FIRST
+require 'dotenv/load'
 require 'mongoid'
 require 'elasticsearch'
 
@@ -16,10 +16,10 @@ Mongoid.load!(
 )
 puts ELASTIC_CLIENT.cluster.health
 
-
+bs = BookSearch.new
 Book.all.each_with_index do |book, index|
   begin
-    BookSearch.index(book)
+    bs.index(book)
     puts "Indexed book: #{index+1} with title #{book.title}"
   rescue => e
     puts e.message

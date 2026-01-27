@@ -3,6 +3,7 @@ require_relative 'services/book_service'
 require_relative 'repository/database'
 require_relative 'controllers/test_controller'
 require_relative 'controllers/controller'
+require_relative 'platform/search_helper'
 require 'json'
 require 'mongoid'
 require 'dotenv/load'
@@ -15,9 +16,9 @@ Mongoid.load!(
 
 # DB = DataBase.new
 SERVICE = Service.new
-SEARCH_SERVICE = BookSearch.new(SERVICE)
+SEARCH_HELPER = SearchHelper.new(SERVICE)
 
 Controller.set :service, SERVICE
-Controller.set :book_search_service, SEARCH_SERVICE
+Controller.set :book_search_helper, SEARCH_HELPER
 
 use Controller
