@@ -1,5 +1,3 @@
-require_relative '../platform/search_helper'
-
 class BookSearch
   def index(book)
     # puts book.id
@@ -41,14 +39,14 @@ class BookSearch
           #   match_all:{}
           # },
           should:[
-            {
-              # term:{
-              #   genre: {value: genres,
-              #           case_insensitive: true,
-              #           boost: 3}
-              # }
-
-            },
+            # {
+            #   term:{
+            #     genre: {value: genres,
+            #             case_insensitive: true,
+            #             boost: 3}
+            #   }
+            #
+            # },
             {
               match_phrase:{
                 title: { query: plain_query,

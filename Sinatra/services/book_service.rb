@@ -5,11 +5,9 @@ class Service
   # def initialize(database)
   #   @db = database
   # end
-
   # def initialize(db)
   #   @db = db
   # end
-
   # def self.get_instance
   #   if @service.nil?
   #     @service = Service.new
@@ -22,14 +20,14 @@ class Service
   end
 
   def delete(id)
-    begin
+    # begin
       book = Book.find_by(id: id)
       book.destroy
-      true
-    rescue => error
-      puts error
-      false
-    end
+    #   true
+    # rescue => error
+    #   puts error
+    #   false
+    # end
   end
 
   def print_all
@@ -73,6 +71,6 @@ class Service
         end
         related_books << book
     end
-    related_books.as_json.to_json
+    related_books
   end
 end

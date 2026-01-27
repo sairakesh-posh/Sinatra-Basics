@@ -1,9 +1,7 @@
-require_relative '../services/book_service'
 require_relative '../services/book_search'
 
 class SearchHelper
-  def initialize(service)
-    @service = service
+  def initialize
     @search = BookSearch.new
   end
 
@@ -15,9 +13,9 @@ class SearchHelper
     @search.delete(id)
   end
 
-  def update(id)
+  def update(book)
     # @search.delete(id)
-    @search.index(@service.find_by_id(id))
+    @search.index(book)
   end
 
   def search(query)
@@ -25,8 +23,7 @@ class SearchHelper
       query: query,
       genre: genre_parser(query)
     }
-    ids = @search.search(body)
-    @service.find_multiple(ids)
+    @search.search(body)
   end
 
   def genre_parser(query)
