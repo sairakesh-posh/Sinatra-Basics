@@ -57,6 +57,32 @@ class Service
     end
   end
 
+  def replace(book_id, book_new)
+    book_old = find_by_id(book_id)
+    if book_old.nil?
+      raise "No Book present with given ID"
+    else
+      # required = ['title', 'author']
+      # missing = required - book_new.keys.map(&:to_s)
+      # raise "Missing fields: #{missing.join(', ')}" unless missing.empty?
+        temp = Book.new(book_new)
+        # temp.assign_attributes(book_new)
+        if temp.valid?
+          protected = ['_id' ,'created_at' ,'updated_at']
+          fields_to_clear = Book.fields.keys - protected
+          fields_to_clear.each { |f| book_old.unset(f) }
+          book_old.assign_attributes(book_new)
+          book_old.save!
+          book_old
+        else
+          puts temp.id
+          puts book_old.id
+          puts book_new
+          raise temp.errors.full_messages[0]
+      end
+    end
+  end
+
   def test
     Book.find_by(title: "The Hobbit")
   end
@@ -65,7 +91,7 @@ class Service
     related_books = []
     related_ids.each do |id|
         book = find_by_id(id)
-        if id.nil?
+        if book.nil?
           puts "Book with #{id} not found"
           next
         end

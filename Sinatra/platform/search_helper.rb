@@ -18,6 +18,11 @@ class SearchHelper
     @search.index(book)
   end
 
+  def replace(book)
+    @search.delete(book.id)
+    @search.index(book)
+  end
+
   def search(query)
     body = {
       query: query,

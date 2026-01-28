@@ -1,7 +1,7 @@
 require_relative '../platform/search_helper'
 require_relative '../services/book_service'
 
-class Books_Helper
+class Books_Flow
   def initialize
     @service = Service.new
     @search_helper = SearchHelper.new
@@ -27,12 +27,32 @@ class Books_Helper
     end
   end
 
-  def update_book(book_id, book)
+  def update_book(book)
+    begin
+      book_id = book['id']
+    rescue => error
+      return false
+    end
     if @service.update_by_id(book_id, book)
       @search_helper.update(@service.find_by_id(book_id))
       @service.find_by_id(book_id)
     else
       false
+    end
+  end
+
+  def replace_book(book)
+    begin
+      book_id = book['id']
+    rescue => error
+      return false
+    end
+    begin
+      book_updated = @service.replace(book_id, book)
+      @search_helper.replace(book_updated)
+      book_updated
+    rescue => error
+      { err: error }
     end
   end
 

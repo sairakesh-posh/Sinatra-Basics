@@ -4,7 +4,7 @@ require_relative '../platform/json_parser_helper'
 class Controller < Sinatra::Base
   def initialize(app = nil, **_kwargs)
     super
-    @platform = Books_Helper.new
+    @books = Books_Flow.new
   end
 
   before do
@@ -25,7 +25,7 @@ class Controller < Sinatra::Base
 
   # set :service, nil
   # set :book_search_helper, nil
-  set :books_helper, nil
+  # set :books_helper, nil
 
   get '/' do
     status 200
@@ -35,7 +35,7 @@ class Controller < Sinatra::Base
   end
 
   get '/book' do
-    list = @platform.get_books
+    list = @books.get_books
     if list.nil?
       {
         res: "No books available"
@@ -50,8 +50,7 @@ class Controller < Sinatra::Base
   end
 
   get '/book/:id' do
-    puts @platform
-    book = @platform.get_book_by_id(params[:id])
+    book = @books.get_book_by_id(params[:id])
     if book.nil?
       status 400
       {
@@ -60,7 +59,6 @@ class Controller < Sinatra::Base
     else
       status 200
       book.as_json.to_json
-      # "ID : #{book.id}, Name : #{book.name}, Ph_No: #{book.ph_no}, Email : #{book.email}, Age: #{book.age}"
     end
   end
 
@@ -73,7 +71,7 @@ class Controller < Sinatra::Base
     #   @data['email'],
     #   @data['age'].to_i
     # )
-    book_new = @platform.add_book(@data)
+    book_new = @books.add_book(@data)
     if book_new[:err].nil?
       book_new.as_json.to_json
     else
@@ -83,7 +81,7 @@ class Controller < Sinatra::Base
   end
 
   delete '/book/:id' do
-    if @platform.delete_book(params[:id]) == true
+    if @books.delete_book(params[:id]) == true
       status 200
       {
         response: 'ok'
@@ -96,18 +94,44 @@ class Controller < Sinatra::Base
     end
   end
 
-  put '/book' do
+  patch '/book' do
     @data = json_parser
-    updated_book = @platform.update_book(@data['id'], @data)
+    updated_book = @books.update_book(@data)
     if updated_book != false
+      status 200
       updated_book.as_json.to_json
       # settings.book_search_helper.update(@data['id'])
       # settings.service.find_by_id(@data['id']).as_json.to_json
     else
       status 400
       {
-        err: 'No Valid Book with given ID is found!'
+        err: 'Invalid ID!'
       }.to_json
+    end
+  end
+
+  put '/book' do
+    @data = json_parser
+    # obj = Model.new(
+    #   settings.service.get_id,
+    #   @data['name'],
+    #   @data['ph_no'],
+    #   @data['email'],
+    #   @data['age'].to_i
+    # )
+    if @data['id'].nil?
+      status 400
+      {
+        error: 'Book ID is missing!'
+      }.as_json.to_json
+    else
+      book_new = @books.replace_book(@data)
+      if book_new[:err].nil?
+        book_new.as_json.to_json
+      else
+        status 500
+        book_new.as_json.to_json
+      end
     end
   end
 
@@ -117,7 +141,7 @@ class Controller < Sinatra::Base
 
   get '/search' do
     begin
-      @platform.search(params[:query]).as_json.to_json
+      @books.search(params[:query]).as_json.to_json
     rescue => error
       puts error
       {

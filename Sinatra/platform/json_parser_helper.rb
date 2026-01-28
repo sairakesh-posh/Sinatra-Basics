@@ -1,7 +1,7 @@
 def json_parser
   begin
     request.body.rewind
-    @data = JSON.parse(request.body.read)
+    JSON.parse(request.body.read)
   rescue => e
     halt(400, {
       response: 'JSON format is expected',
