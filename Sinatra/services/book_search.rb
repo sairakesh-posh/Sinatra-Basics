@@ -1,11 +1,12 @@
+INDEX = 'books_v2'
+
 class BookSearch
   def index(book)
     # puts book.id
     ELASTIC_CLIENT.index(
-      index: 'books',
+      index: INDEX,
       id: book.id.to_s,
       body: {
-        id: book.id.to_s,
         title: book.title,
         author: book.author,
         genre: book.genre,
@@ -18,7 +19,7 @@ class BookSearch
 
   def delete(id)
     ELASTIC_CLIENT.delete(
-      index: 'books',
+      index: INDEX,
       id: id.to_s
     )
   rescue => e
@@ -27,26 +28,16 @@ class BookSearch
 
   def search(query)
     query_clean = query_cleaner(query[:query])
-    puts query_clean
     plain_query = query[:query]
-    puts plain_query
     genres = query[:genre]
 
     body = {
       query: {
         bool:{
-          # must:{
-          #   match_all:{}
-          # },
+          must:{
+            match_all:{}
+          },
           should:[
-            # {
-            #   term:{
-            #     genre: {value: genres,
-            #             case_insensitive: true,
-            #             boost: 3}
-            #   }
-            #
-            # },
             {
               match_phrase:{
                 title: { query: plain_query,
@@ -73,12 +64,20 @@ class BookSearch
               }
             },
             {
-              term:{
-                author: { value: plain_query,
-                          case_insensitive: true ,
-                          boost: 1}
+              match:{
+                author: { query: plain_query,
+                          fuzziness: 2,
+                          boost: 3}
               }
             },
+            {
+              term:{
+                "author.keyword" => {
+                  value: plain_query,
+                  boost: 4
+                }
+              }
+            }
           # {
           #   term:{
           #     genre: {
@@ -96,7 +95,7 @@ class BookSearch
           #   }
           # }
           ],
-          minimum_should_match: 1
+          # minimum_should_match: 1
         }
       },
       sort:[
@@ -127,7 +126,7 @@ class BookSearch
 
     begin
       res = ELASTIC_CLIENT.search(
-        index: 'books',
+        index: INDEX,
         body: body
       )
       related_id = []
@@ -144,7 +143,7 @@ class BookSearch
 
   #Query cleaning is not preferred as it affects the match_phrase working
   def query_cleaner(query)
-    stop_words = ['a', 'an', 'the', 'is', 'was']
+    stop_words = %w[a an the is was]
     filtered_query = ''
     query.split(' ').each do |word|
       if stop_words.include?(word)

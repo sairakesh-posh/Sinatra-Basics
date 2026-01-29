@@ -56,7 +56,7 @@ class Books_Flow
     end
   end
 
-  def get_books()
+  def get_books
     @service.print_all
   end
 

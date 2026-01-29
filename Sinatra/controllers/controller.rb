@@ -148,6 +148,5 @@ class Controller < Sinatra::Base
         response: error
       }.to_json
     end
-
   end
 end
