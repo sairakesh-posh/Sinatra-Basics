@@ -6,3 +6,6 @@ gem 'puma'
 gem "rackup", "~> 2.3"
 gem 'elasticsearch'
 gem 'dotenv'
+gem 'jwt'
+gem 'bcrypt'
+gem 'redis'

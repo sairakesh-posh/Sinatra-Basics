@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <p id="para">
+        Loading...
+    </p>
+</div>
+<script>
+    async function load() {
+        data = await fetch("http://127.0.0.1:4567/book")
+        console.log(data)
+        document.getElementById('para').innerText = data
+    }
+    load()
+    // for (let index = 0; index < data.length; index++) {
+    //     const element = array[index];
+    //
+    // }
+
+</script>
+</body>
+</html>

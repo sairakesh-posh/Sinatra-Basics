@@ -1,10 +1,12 @@
 require_relative '../platform/search_helper'
 require_relative '../services/book_service'
+require_relative '../services/redis_service'
 
 class Books_Flow
   def initialize
     @service = Service.new
     @search_helper = SearchHelper.new
+    @redis_service = RedisService.new
   end
 
   def add_book(book)
@@ -56,20 +58,28 @@ class Books_Flow
     end
   end
 
-  def get_books
-    @service.print_all
+  def get_books(pg)
+    @service.print_all(pg)
   end
 
-  def get_book_by_id(id)
+  def get_book_by_id(username, id)
     begin
-      @service.find_by_id(id)
+      book = @service.find_by_id(id)
+      puts book[:id]
+      @redis_service.add_to_cache(username, book[:id].to_s)
+      book
     rescue => error
+      puts error
       nil
     end
   end
 
   def search(query)
-    ids = @search_helper.search(query)
-    @service.find_multiple(ids)
+    res = @search_helper.search(query)
+    ids = res[:ids]
+    aggregations = res[:aggs]
+    books = @service.find_multiple(ids)
+    books << aggregations
+    books
   end
 end

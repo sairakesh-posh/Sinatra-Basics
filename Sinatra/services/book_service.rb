@@ -30,8 +30,8 @@ class Service
     # end
   end
 
-  def print_all
-    Book.all
+  def print_all(pg)
+    Book.order_by(rating: "desc").skip(10*(pg -1)).limit(10)
   end
 
   def find_by_id(id)
@@ -40,7 +40,6 @@ class Service
     rescue => error
       nil
     end
-
   end
 
   # def get_id
@@ -88,15 +87,23 @@ class Service
   end
 
   def find_multiple(related_ids)
-    related_books = []
-    related_ids.each do |id|
-        book = find_by_id(id)
-        if book.nil?
-          puts "Book with #{id} not found"
-          next
-        end
-        related_books << book
+    related_books = Book.where(_id: {'$in' => related_ids}).to_a
+    # related_ids.each do |id|
+    #     book = find_by_id(id)
+    #     if book.nil?
+    #       puts "Book with #{id} not found"
+    #       next
+    #     end
+    #     related_books << book
+    # end
+    books_by_ids = {}
+    related_books.each do |book|
+      books_by_ids[book.id.to_s] = book
     end
-    related_books
+    sorted_books = []
+    related_ids.each do |id|
+      sorted_books << books_by_ids[id]
+    end
+    sorted_books
   end
 end

@@ -1,0 +1,2112 @@
+[
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "pg": 277,
+    "copies": 12,
+    "year": 1951,
+    "genre": "Classic",
+    "rating": 3.8,
+    "description": "Holden Caulfield narrates his wanderings in New York City after being expelled from prep school. The novel explores themes of alienation and the loss of innocence."
+  },
+  {
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "pg": 224,
+    "copies": 34,
+    "year": 1954,
+    "genre": "Classic",
+    "rating": 3.7,
+    "description": "A group of British schoolboys stranded on an uninhabited island attempt to govern themselves. Their society quickly descends into savagery and chaos."
+  },
+  {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "pg": 112,
+    "copies": 45,
+    "year": 1945,
+    "genre": "Classic",
+    "rating": 3.9,
+    "description": "Farm animals revolt against their human farmer to create a society of equality. The revolution is eventually betrayed by the pigs who establish a dictatorship."
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "pg": 158,
+    "copies": 21,
+    "year": 1953,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "A fireman in a dystopian future is tasked with burning books. He begins to question his society's suppression of knowledge and critical thought."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "pg": 268,
+    "copies": 18,
+    "year": 1932,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "A genetically engineered society achieves stability by sacrificing freedom and individuality. Citizens are kept docile through conditioning and a drug called Soma."
+  },
+  {
+    "title": "Of Mice and Men",
+    "author": "John Steinbeck",
+    "pg": 107,
+    "copies": 8,
+    "year": 1937,
+    "genre": "Classic",
+    "rating": 3.9,
+    "description": "Two migrant workers travel through California during the Great Depression dreaming of owning land. One protects the other, who has a mental disability, leading to tragedy."
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "pg": 464,
+    "copies": 29,
+    "year": 1939,
+    "genre": "Classic",
+    "rating": 4.0,
+    "description": "The Joad family is forced off their Oklahoma farm by the Dust Bowl. They migrate to California, facing hardship and exploitation along the way."
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "pg": 500,
+    "copies": 41,
+    "year": 1847,
+    "genre": "Classic",
+    "rating": 4.1,
+    "description": "An orphaned governess asserts her independence and falls in love with her employer. She discovers a dark secret hidden in his home, Thornfield Hall."
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "pg": 416,
+    "copies": 15,
+    "year": 1847,
+    "genre": "Classic",
+    "rating": 3.8,
+    "description": "The passionate and destructive love between Heathcliff and Catherine Earnshaw haunts the Yorkshire moors. Their relationship destroys them and those around them."
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "pg": 279,
+    "copies": 50,
+    "year": 1813,
+    "genre": "Romance",
+    "rating": 4.3,
+    "description": "Elizabeth Bennet navigates societal expectations and family pressure to marry. She overcomes her initial dislike of the wealthy and proud Mr. Darcy."
+  },
+  {
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen",
+    "pg": 409,
+    "copies": 22,
+    "year": 1811,
+    "genre": "Romance",
+    "rating": 4.0,
+    "description": "Two sisters with opposing temperaments navigate love and heartbreak. Elinor represents sense and restraint, while Marianne represents sensibility and emotion."
+  },
+  {
+    "title": "Emma",
+    "author": "Jane Austen",
+    "pg": 474,
+    "copies": 30,
+    "year": 1815,
+    "genre": "Romance",
+    "rating": 4.0,
+    "description": "A wealthy and clever young woman meddles in the romantic lives of her friends. Her matchmaking efforts lead to misunderstandings and self-realization."
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "pg": 280,
+    "copies": 37,
+    "year": 1818,
+    "genre": "Science Fiction",
+    "rating": 3.8,
+    "description": "A scientist creates a sentient creature from dead body parts. The creature, rejected by his creator and society, seeks revenge for his isolation."
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "pg": 418,
+    "copies": 11,
+    "year": 1897,
+    "genre": "Horror",
+    "rating": 4.0,
+    "description": "Count Dracula moves from Transylvania to England to spread the undead curse. A group led by Professor Van Helsing fights to stop him."
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "pg": 254,
+    "copies": 26,
+    "year": 1890,
+    "genre": "Classic",
+    "rating": 4.1,
+    "description": "A young man remains eternally youthful while his portrait ages and reflects his moral corruption. He indulges in a life of hedonism and sin."
+  },
+  {
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "pg": 505,
+    "copies": 19,
+    "year": 1861,
+    "genre": "Classic",
+    "rating": 3.8,
+    "description": "The orphan Pip rises to wealth due to a mysterious benefactor. He learns hard lessons about class, love, and loyalty."
+  },
+  {
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "pg": 489,
+    "copies": 7,
+    "year": 1859,
+    "genre": "Historical",
+    "rating": 3.8,
+    "description": "A story of sacrifice and resurrection set in London and Paris during the French Revolution. The lawyer Sydney Carton finds redemption through a final act of love."
+  },
+  {
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "pg": 964,
+    "copies": 14,
+    "year": 1877,
+    "genre": "Classic",
+    "rating": 4.1,
+    "description": "A married aristocrat enters a scandalous affair with a cavalry officer in Imperial Russia. The novel explores the consequences of passion and societal hypocrisy."
+  },
+  {
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "pg": 1225,
+    "copies": 4,
+    "year": 1869,
+    "genre": "Historical",
+    "rating": 4.2,
+    "description": "A sprawling epic intertwining the lives of five aristocratic families during the Napoleonic Wars. It examines history, free will, and the meaning of life."
+  },
+  {
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "pg": 671,
+    "copies": 33,
+    "year": 1866,
+    "genre": "Classic",
+    "rating": 4.2,
+    "description": "A desperate student murders a pawnbroker to test his theory of being an extraordinary man. He is subsequently consumed by guilt and paranoia."
+  },
+  {
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "pg": 796,
+    "copies": 9,
+    "year": 1880,
+    "genre": "Classic",
+    "rating": 4.3,
+    "description": "A philosophical novel involving patricide and the conflicts between three brothers. It delves into debates on God, free will, and morality."
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "pg": 310,
+    "copies": 48,
+    "year": 1937,
+    "genre": "Fantasy",
+    "rating": 4.3,
+    "description": "Bilbo Baggins, a reluctant hobbit, joins a quest to reclaim a dwarven kingdom from a dragon. He discovers a magical ring that changes his fate."
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "pg": 423,
+    "copies": 44,
+    "year": 1954,
+    "genre": "Fantasy",
+    "rating": 4.4,
+    "description": "Frodo Baggins inherits a dangerous ring and begins a journey to destroy it. He is accompanied by a fellowship of friends and warriors."
+  },
+  {
+    "title": "The Two Towers",
+    "author": "J.R.R. Tolkien",
+    "pg": 352,
+    "copies": 39,
+    "year": 1954,
+    "genre": "Fantasy",
+    "rating": 4.4,
+    "description": "The fellowship is broken, and the members face separate challenges in the war against Sauron. Frodo and Sam continue their journey to Mordor."
+  },
+  {
+    "title": "The Return of the King",
+    "author": "J.R.R. Tolkien",
+    "pg": 416,
+    "copies": 42,
+    "year": 1955,
+    "genre": "Fantasy",
+    "rating": 4.5,
+    "description": "The final battle for Middle-earth begins as Aragorn claims his birthright. Frodo struggles to destroy the Ring in the fires of Mount Doom."
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "pg": 309,
+    "copies": 50,
+    "year": 1997,
+    "genre": "Fantasy",
+    "rating": 4.5,
+    "description": "An orphan discovers he is a wizard and enrolls in a magical boarding school. He makes friends and uncovers the truth about his parents' death."
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "pg": 341,
+    "copies": 46,
+    "year": 1998,
+    "genre": "Fantasy",
+    "rating": 4.4,
+    "description": "Harry returns to Hogwarts to find that a mysterious presence is petrifying students. He must uncover the secret of the school's hidden chamber."
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "pg": 435,
+    "copies": 49,
+    "year": 1999,
+    "genre": "Fantasy",
+    "rating": 4.6,
+    "description": "A dangerous wizard escapes from prison and is believed to be hunting Harry. Harry learns more about his family's past and the Marauders."
+  },
+  {
+    "title": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "pg": 835,
+    "copies": 35,
+    "year": 1996,
+    "genre": "Fantasy",
+    "rating": 4.4,
+    "description": "Noble families vie for control of the Iron Throne in the land of Westeros. Meanwhile, an ancient enemy awakens in the frozen north."
+  },
+  {
+    "title": "A Clash of Kings",
+    "author": "George R.R. Martin",
+    "pg": 768,
+    "copies": 31,
+    "year": 1998,
+    "genre": "Fantasy",
+    "rating": 4.4,
+    "description": "Civil war erupts in Westeros as five kings declare their claim to the throne. Magic begins to return to the world."
+  },
+  {
+    "title": "The Lion, the Witch and the Wardrobe",
+    "author": "C.S. Lewis",
+    "pg": 206,
+    "copies": 40,
+    "year": 1950,
+    "genre": "Fantasy",
+    "rating": 4.2,
+    "description": "Four siblings discover a magical world inside a wardrobe frozen in eternal winter. They help the lion Aslan defeat the White Witch."
+  },
+  {
+    "title": "Prince Caspian",
+    "author": "C.S. Lewis",
+    "pg": 223,
+    "copies": 28,
+    "year": 1951,
+    "genre": "Fantasy",
+    "rating": 4.0,
+    "description": "The Pevensie children return to Narnia centuries after their reign. They help the rightful prince reclaim his throne from a tyrant."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "pg": 412,
+    "copies": 38,
+    "year": 1965,
+    "genre": "Science Fiction",
+    "rating": 4.2,
+    "description": "Paul Atreides moves to the desert planet Arrakis, the only source of a vital spice. He becomes the messiah of the planet's native people."
+  },
+  {
+    "title": "Dune Messiah",
+    "author": "Frank Herbert",
+    "pg": 337,
+    "copies": 25,
+    "year": 1969,
+    "genre": "Science Fiction",
+    "rating": 3.9,
+    "description": "Paul Atreides rules as Emperor, but faces conspiracies and the burden of his own prescience. He struggles to control the jihad unleashed in his name."
+  },
+  {
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "pg": 324,
+    "copies": 43,
+    "year": 1985,
+    "genre": "Science Fiction",
+    "rating": 4.3,
+    "description": "A brilliant boy is recruited to a military school in space to train for an alien war. He endures isolation and simulated battles."
+  },
+  {
+    "title": "Speaker for the Dead",
+    "author": "Orson Scott Card",
+    "pg": 415,
+    "copies": 20,
+    "year": 1986,
+    "genre": "Science Fiction",
+    "rating": 4.1,
+    "description": "Ender Wiggin travels to a new colony to investigate an alien species. He seeks to bring understanding between humans and the 'Piggies'."
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "pg": 193,
+    "copies": 47,
+    "year": 1979,
+    "genre": "Science Fiction",
+    "rating": 4.2,
+    "description": "Arthur Dent escapes Earth seconds before it is demolished for a highway. He travels the universe with an eccentric guide and a depressed robot."
+  },
+  {
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "pg": 271,
+    "copies": 16,
+    "year": 1984,
+    "genre": "Science Fiction",
+    "rating": 3.9,
+    "description": "A washed-up computer hacker is hired for a last-ditch job in cyberspace. The novel pioneered the cyberpunk genre."
+  },
+  {
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "pg": 480,
+    "copies": 18,
+    "year": 1992,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "A pizza deliverer in reality is a warrior prince in the Metaverse. He uncovers a conspiracy involving a linguistic virus."
+  },
+  {
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "pg": 255,
+    "copies": 27,
+    "year": 1951,
+    "genre": "Science Fiction",
+    "rating": 4.2,
+    "description": "A mathematician predicts the fall of the Galactic Empire. He creates a Foundation to preserve knowledge and shorten the ensuing dark age."
+  },
+  {
+    "title": "I, Robot",
+    "author": "Isaac Asimov",
+    "pg": 253,
+    "copies": 23,
+    "year": 1950,
+    "genre": "Science Fiction",
+    "rating": 4.2,
+    "description": "A collection of short stories exploring the Three Laws of Robotics. It examines the ethical complexities of artificial intelligence."
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "pg": 369,
+    "copies": 45,
+    "year": 2011,
+    "genre": "Science Fiction",
+    "rating": 4.4,
+    "description": "An astronaut is stranded alone on Mars after a dust storm. He uses science and engineering to survive while NASA attempts a rescue."
+  },
+  {
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "pg": 374,
+    "copies": 36,
+    "year": 2011,
+    "genre": "Science Fiction",
+    "rating": 4.2,
+    "description": "Teenagers compete in a virtual reality treasure hunt to inherit a fortune. The quest is filled with 1980s pop culture references."
+  },
+  {
+    "title": "Jurassic Park",
+    "author": "Michael Crichton",
+    "pg": 399,
+    "copies": 32,
+    "year": 1990,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "Cloned dinosaurs break loose at an island theme park. A group of survivors must navigate the dangerous prehistoric wildlife."
+  },
+  {
+    "title": "The Andromeda Strain",
+    "author": "Michael Crichton",
+    "pg": 327,
+    "copies": 12,
+    "year": 1969,
+    "genre": "Science Fiction",
+    "rating": 3.8,
+    "description": "A team of scientists races to contain a deadly extraterrestrial microorganism. The organism kills instantly and mutates rapidly."
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "pg": 489,
+    "copies": 48,
+    "year": 2003,
+    "genre": "Thriller",
+    "rating": 3.8,
+    "description": "A symbologist investigates a murder in the Louvre that leads to a religious mystery. He uncovers secrets about the Holy Grail."
+  },
+  {
+    "title": "Angels & Demons",
+    "author": "Dan Brown",
+    "pg": 616,
+    "copies": 30,
+    "year": 2000,
+    "genre": "Thriller",
+    "rating": 3.9,
+    "description": "Robert Langdon tries to stop the Illuminati from destroying the Vatican with antimatter. The chase moves through Rome's historic sites."
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "pg": 415,
+    "copies": 39,
+    "year": 2012,
+    "genre": "Thriller",
+    "rating": 4.1,
+    "description": "A woman disappears on her fifth wedding anniversary, implicating her husband. The story reveals the toxic layers of their marriage."
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "pg": 465,
+    "copies": 35,
+    "year": 2005,
+    "genre": "Mystery",
+    "rating": 4.1,
+    "description": "A journalist and a hacker investigate the decades-old disappearance of a wealthy girl. They uncover deep corruption in a Swedish industrial family."
+  },
+  {
+    "title": "The Shining",
+    "author": "Stephen King",
+    "pg": 447,
+    "copies": 29,
+    "year": 1977,
+    "genre": "Horror",
+    "rating": 4.2,
+    "description": "A family winters at an isolated hotel where supernatural forces affect the father. He descends into madness, threatening his wife and son."
+  },
+  {
+    "title": "It",
+    "author": "Stephen King",
+    "pg": 1138,
+    "copies": 24,
+    "year": 1986,
+    "genre": "Horror",
+    "rating": 4.2,
+    "description": "A group of friends confront a shape-shifting evil that plagues their town. They face the entity as children and return to fight it as adults."
+  },
+  {
+    "title": "Misery",
+    "author": "Stephen King",
+    "pg": 310,
+    "copies": 17,
+    "year": 1987,
+    "genre": "Thriller",
+    "rating": 4.2,
+    "description": "A famous author is held captive by an obsessed fan after a car accident. She forces him to rewrite his latest novel to her liking."
+  },
+  {
+    "title": "Pet Sematary",
+    "author": "Stephen King",
+    "pg": 374,
+    "copies": 21,
+    "year": 1983,
+    "genre": "Horror",
+    "rating": 3.9,
+    "description": "A family discovers a burial ground that brings the dead back to life. The resurrected returns are changed and dangerous."
+  },
+  {
+    "title": "The Stand",
+    "author": "Stephen King",
+    "pg": 1152,
+    "copies": 10,
+    "year": 1978,
+    "genre": "Fantasy",
+    "rating": 4.3,
+    "description": "Survivors of a superflu plague gather to fight a battle between good and evil. They are drawn to a mystic elder or a dark sorcerer."
+  },
+  {
+    "title": "Carrie",
+    "author": "Stephen King",
+    "pg": 199,
+    "copies": 26,
+    "year": 1974,
+    "genre": "Horror",
+    "rating": 3.9,
+    "description": "A bullied high school girl discovers she has telekinetic powers. She unleashes her wrath on her town after a cruel prank at prom."
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "author": "Thomas Harris",
+    "pg": 338,
+    "copies": 31,
+    "year": 1988,
+    "genre": "Thriller",
+    "rating": 4.2,
+    "description": "An FBI trainee seeks the help of an imprisoned cannibal to catch another serial killer. A psychological game ensues between them."
+  },
+  {
+    "title": "Red Dragon",
+    "author": "Thomas Harris",
+    "pg": 348,
+    "copies": 19,
+    "year": 1981,
+    "genre": "Thriller",
+    "rating": 4.0,
+    "description": "A retired FBI agent returns to track down a serial killer wiping out families. He consults the dangerous Dr. Hannibal Lecter."
+  },
+  {
+    "title": "The Hunt for Red October",
+    "author": "Tom Clancy",
+    "pg": 387,
+    "copies": 22,
+    "year": 1984,
+    "genre": "Thriller",
+    "rating": 4.1,
+    "description": "A Soviet submarine captain attempts to defect to the United States with a stealth sub. Jack Ryan must determine his true intentions."
+  },
+  {
+    "title": "Patriot Games",
+    "author": "Tom Clancy",
+    "pg": 540,
+    "copies": 14,
+    "year": 1987,
+    "genre": "Thriller",
+    "rating": 4.0,
+    "description": "Jack Ryan foils an assassination attempt on the British Royal Family. He becomes the target of a vengeful Irish terrorist group."
+  },
+  {
+    "title": "The Firm",
+    "author": "John Grisham",
+    "pg": 421,
+    "copies": 36,
+    "year": 1991,
+    "genre": "Thriller",
+    "rating": 4.0,
+    "description": "A young lawyer joins a prestigious firm that offers an incredible salary. He discovers the firm is a front for organized crime."
+  },
+  {
+    "title": "A Time to Kill",
+    "author": "John Grisham",
+    "pg": 515,
+    "copies": 27,
+    "year": 1989,
+    "genre": "Thriller",
+    "rating": 4.1,
+    "description": "A father kills the men who assaulted his daughter in Mississippi. A young lawyer defends him in a racially charged trial."
+  },
+  {
+    "title": "The Pelican Brief",
+    "author": "John Grisham",
+    "pg": 387,
+    "copies": 15,
+    "year": 1992,
+    "genre": "Thriller",
+    "rating": 3.9,
+    "description": "A law student writes a brief theorizing why two Supreme Court justices were murdered. Her theory puts her life in immediate danger."
+  },
+  {
+    "title": "The Notebook",
+    "author": "Nicholas Sparks",
+    "pg": 214,
+    "copies": 42,
+    "year": 1996,
+    "genre": "Romance",
+    "rating": 4.1,
+    "description": "An elderly man reads a love story to a woman with Alzheimer's. It recounts the summer romance of a young couple separated by war."
+  },
+  {
+    "title": "A Walk to Remember",
+    "author": "Nicholas Sparks",
+    "pg": 240,
+    "copies": 33,
+    "year": 1999,
+    "genre": "Romance",
+    "rating": 4.1,
+    "description": "A popular high school boy falls for a quiet, religious girl. Their relationship transforms him before tragedy strikes."
+  },
+  {
+    "title": "Me Before You",
+    "author": "Jojo Moyes",
+    "pg": 369,
+    "copies": 38,
+    "year": 2012,
+    "genre": "Romance",
+    "rating": 4.2,
+    "description": "A quirky young woman becomes a caregiver for a paralyzed man. They change each other's lives as she tries to show him life is worth living."
+  },
+  {
+    "title": "The Time Traveler's Wife",
+    "author": "Audrey Niffenegger",
+    "pg": 536,
+    "copies": 16,
+    "year": 2003,
+    "genre": "Romance",
+    "rating": 4.0,
+    "description": "A librarian with a genetic disorder involuntarily travels through time. His wife attempts to maintain a normal life despite his absences."
+  },
+  {
+    "title": "Outlander",
+    "author": "Diana Gabaldon",
+    "pg": 627,
+    "copies": 29,
+    "year": 1991,
+    "genre": "Historical",
+    "rating": 4.1,
+    "description": "A WWII nurse is transported back in time to 1743 Scotland. She falls in love with a Highland warrior amidst the Jacobite rising."
+  },
+  {
+    "title": "Twilight",
+    "author": "Stephenie Meyer",
+    "pg": 498,
+    "copies": 47,
+    "year": 2005,
+    "genre": "Fantasy",
+    "rating": 3.6,
+    "description": "A teenage girl moves to a rainy town and falls for a mysterious boy. She discovers he is a vampire who abstains from human blood."
+  },
+  {
+    "title": "New Moon",
+    "author": "Stephenie Meyer",
+    "pg": 563,
+    "copies": 41,
+    "year": 2006,
+    "genre": "Fantasy",
+    "rating": 3.5,
+    "description": "Edward leaves Bella to protect her, plunging her into depression. She finds comfort with her friend Jacob, who hides a supernatural secret."
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "pg": 374,
+    "copies": 50,
+    "year": 2008,
+    "genre": "Science Fiction",
+    "rating": 4.3,
+    "description": "A girl volunteers for a televised fight to the death to save her sister. She becomes a symbol of hope in a dystopian nation."
+  },
+  {
+    "title": "Catching Fire",
+    "author": "Suzanne Collins",
+    "pg": 391,
+    "copies": 45,
+    "year": 2009,
+    "genre": "Science Fiction",
+    "rating": 4.3,
+    "description": "Katniss and Peeta become targets of the Capitol after their victory. Rebellion begins to simmer in the districts."
+  },
+  {
+    "title": "Mockingjay",
+    "author": "Suzanne Collins",
+    "pg": 390,
+    "copies": 40,
+    "year": 2010,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "Katniss becomes the face of the revolution against the Capitol. She struggles with the toll of war and political manipulation."
+  },
+  {
+    "title": "Divergent",
+    "author": "Veronica Roth",
+    "pg": 487,
+    "copies": 34,
+    "year": 2011,
+    "genre": "Science Fiction",
+    "rating": 4.1,
+    "description": "In a society divided by virtues, a girl discovers she doesn't fit into one box. She uncovers a plot to destroy those like her."
+  },
+  {
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "pg": 375,
+    "copies": 28,
+    "year": 2009,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "A boy wakes up in a giant maze with no memory. He joins a community of boys trying to map the maze and escape."
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "pg": 313,
+    "copies": 44,
+    "year": 2012,
+    "genre": "YA",
+    "rating": 4.2,
+    "description": "Two teenagers with cancer fall in love at a support group. They travel to Amsterdam to meet a reclusive author."
+  },
+  {
+    "title": "Looking for Alaska",
+    "author": "John Green",
+    "pg": 221,
+    "copies": 21,
+    "year": 2005,
+    "genre": "YA",
+    "rating": 4.0,
+    "description": "A boy goes to boarding school and falls for an elusive girl named Alaska. A tragedy forces him to rethink his understanding of her."
+  },
+  {
+    "title": "Paper Towns",
+    "author": "John Green",
+    "pg": 305,
+    "copies": 18,
+    "year": 2008,
+    "genre": "YA",
+    "rating": 3.8,
+    "description": "A boy goes on a road trip to find his neighbor who disappeared after a night of pranks. He follows clues she left behind."
+  },
+  {
+    "title": "The Perks of Being a Wallflower",
+    "author": "Stephen Chbosky",
+    "pg": 213,
+    "copies": 36,
+    "year": 1999,
+    "genre": "YA",
+    "rating": 4.2,
+    "description": "An introverted freshman navigates high school with the help of two seniors. The book deals with trauma, friendship, and growing up."
+  },
+  {
+    "title": "Thirteen Reasons Why",
+    "author": "Jay Asher",
+    "pg": 288,
+    "copies": 23,
+    "year": 2007,
+    "genre": "YA",
+    "rating": 3.9,
+    "description": "A boy receives tapes recorded by a classmate who committed suicide. The tapes explain the thirteen reasons why she ended her life."
+  },
+  {
+    "title": "Wonder",
+    "author": "R.J. Palacio",
+    "pg": 315,
+    "copies": 46,
+    "year": 2012,
+    "genre": "Children's",
+    "rating": 4.4,
+    "description": "A boy with a facial difference enters public school for the first time. The story explores kindness and acceptance from multiple perspectives."
+  },
+  {
+    "title": "Bridge to Terabithia",
+    "author": "Katherine Paterson",
+    "pg": 128,
+    "copies": 17,
+    "year": 1977,
+    "genre": "Children's",
+    "rating": 4.0,
+    "description": "Two lonely children create a magical forest kingdom to escape their troubles. A sudden tragedy forces one to cope with grief."
+  },
+  {
+    "title": "Matilda",
+    "author": "Roald Dahl",
+    "pg": 240,
+    "copies": 39,
+    "year": 1988,
+    "genre": "Children's",
+    "rating": 4.3,
+    "description": "A brilliant girl with telekinetic powers deals with neglectful parents and a cruel headmistress. She finds a kindred spirit in her teacher."
+  },
+  {
+    "title": "Charlie and the Chocolate Factory",
+    "author": "Roald Dahl",
+    "pg": 176,
+    "copies": 41,
+    "year": 1964,
+    "genre": "Children's",
+    "rating": 4.1,
+    "description": "A poor boy finds a golden ticket to tour a mysterious chocolate factory. The owner, Willy Wonka, tests the children's character."
+  },
+  {
+    "title": "James and the Giant Peach",
+    "author": "Roald Dahl",
+    "pg": 146,
+    "copies": 20,
+    "year": 1961,
+    "genre": "Children's",
+    "rating": 4.0,
+    "description": "An orphan boy escapes his cruel aunts on a giant magical peach. He befriends giant insects living inside the fruit."
+  },
+  {
+    "title": "The BFG",
+    "author": "Roald Dahl",
+    "pg": 199,
+    "copies": 25,
+    "year": 1982,
+    "genre": "Children's",
+    "rating": 4.2,
+    "description": "A young girl befriends a Big Friendly Giant who catches dreams. Together they try to stop other giants from eating humans."
+  },
+  {
+    "title": "Charlotte's Web",
+    "author": "E.B. White",
+    "pg": 184,
+    "copies": 33,
+    "year": 1952,
+    "genre": "Children's",
+    "rating": 4.2,
+    "description": "A spider saves a pig from slaughter by weaving words into her web. It is a story of friendship, life, and death."
+  },
+  {
+    "title": "Stuart Little",
+    "author": "E.B. White",
+    "pg": 131,
+    "copies": 14,
+    "year": 1945,
+    "genre": "Children's",
+    "rating": 3.9,
+    "description": "A mouse born to a human family goes on an adventure to find his lost bird friend. He faces the challenges of being small in a big world."
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "author": "Maurice Sendak",
+    "pg": 48,
+    "copies": 43,
+    "year": 1963,
+    "genre": "Children's",
+    "rating": 4.2,
+    "description": "A boy travels to a land of monsters where he becomes king. He eventually realizes he misses the love and comfort of home."
+  },
+  {
+    "title": "The Giving Tree",
+    "author": "Shel Silverstein",
+    "pg": 64,
+    "copies": 38,
+    "year": 1964,
+    "genre": "Children's",
+    "rating": 4.3,
+    "description": "A tree gives everything it has to a boy throughout his life to make him happy. It is a parable about selfless love and taking."
+  },
+  {
+    "title": "Green Eggs and Ham",
+    "author": "Dr. Seuss",
+    "pg": 62,
+    "copies": 49,
+    "year": 1960,
+    "genre": "Children's",
+    "rating": 4.3,
+    "description": "Sam-I-Am persistently asks a character to try a strange dish. The character eventually tries it and discovers he likes it."
+  },
+  {
+    "title": "The Cat in the Hat",
+    "author": "Dr. Seuss",
+    "pg": 61,
+    "copies": 45,
+    "year": 1957,
+    "genre": "Children's",
+    "rating": 4.2,
+    "description": "A chaotic cat visits two bored children on a rainy day. He creates a mess but cleans it up before their mother returns."
+  },
+  {
+    "title": "Oh, the Places You'll Go!",
+    "author": "Dr. Seuss",
+    "pg": 56,
+    "copies": 48,
+    "year": 1990,
+    "genre": "Children's",
+    "rating": 4.3,
+    "description": "An inspirational book about the journey of life and its ups and downs. It encourages perseverance in the face of challenges."
+  },
+  {
+    "title": "Holes",
+    "author": "Louis Sachar",
+    "pg": 233,
+    "copies": 31,
+    "year": 1998,
+    "genre": "YA",
+    "rating": 4.2,
+    "description": "A boy is sent to a detention camp where he must dig holes daily. He discovers a connection between the camp and his family's past."
+  },
+  {
+    "title": "The Giver",
+    "author": "Lois Lowry",
+    "pg": 208,
+    "copies": 37,
+    "year": 1993,
+    "genre": "Science Fiction",
+    "rating": 4.1,
+    "description": "A boy lives in a utopian society without pain or choice. He learns the dark truth about his world when he is chosen to hold its memories."
+  },
+  {
+    "title": "Number the Stars",
+    "author": "Lois Lowry",
+    "pg": 137,
+    "copies": 26,
+    "year": 1989,
+    "genre": "Historical",
+    "rating": 4.1,
+    "description": "A young Danish girl helps her Jewish friend escape the Nazis during World War II. It depicts the courage of the Danish Resistance."
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "pg": 443,
+    "copies": 42,
+    "year": 2011,
+    "genre": "Non-Fiction",
+    "rating": 4.4,
+    "description": "A brief history of humankind from the Stone Age to the present. It explores how biology and history have shaped us."
+  },
+  {
+    "title": "Homo Deus",
+    "author": "Yuval Noah Harari",
+    "pg": 448,
+    "copies": 29,
+    "year": 2015,
+    "genre": "Non-Fiction",
+    "rating": 4.2,
+    "description": "The book explores the future of humanity and the potential impact of technology. It questions what will replace famine, plague, and war."
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "pg": 334,
+    "copies": 50,
+    "year": 2018,
+    "genre": "Non-Fiction",
+    "rating": 4.5,
+    "description": "A woman raised by survivalists in Idaho escapes her violent upbringing to attend university. It is a memoir about the power of education."
+  },
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "pg": 448,
+    "copies": 48,
+    "year": 2018,
+    "genre": "Non-Fiction",
+    "rating": 4.5,
+    "description": "The former First Lady recounts her childhood, career, and time in the White House. She emphasizes finding one's voice."
+  },
+  {
+    "title": "The Immortal Life of Henrietta Lacks",
+    "author": "Rebecca Skloot",
+    "pg": 369,
+    "copies": 35,
+    "year": 2010,
+    "genre": "Non-Fiction",
+    "rating": 4.1,
+    "description": "The story of a woman whose cancer cells became one of the most important tools in medicine. It raises questions about bioethics and race."
+  },
+  {
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "pg": 656,
+    "copies": 22,
+    "year": 2011,
+    "genre": "Biography",
+    "rating": 4.1,
+    "description": "A biography of the Apple co-founder based on extensive interviews. It details his perfectionism and revolutionary impact on technology."
+  },
+  {
+    "title": "Unbroken",
+    "author": "Laura Hillenbrand",
+    "pg": 473,
+    "copies": 30,
+    "year": 2010,
+    "genre": "Non-Fiction",
+    "rating": 4.4,
+    "description": "The true story of an Olympic runner who survived a plane crash and a Japanese POW camp in WWII. It is a tale of resilience and forgiveness."
+  },
+  {
+    "title": "Into the Wild",
+    "author": "Jon Krakauer",
+    "pg": 207,
+    "copies": 19,
+    "year": 1996,
+    "genre": "Non-Fiction",
+    "rating": 4.0,
+    "description": "A young man abandons his possessions to live in the Alaskan wilderness. His journey ends in tragedy, sparking debate about his motivations."
+  },
+  {
+    "title": "Into Thin Air",
+    "author": "Jon Krakauer",
+    "pg": 332,
+    "copies": 24,
+    "year": 1997,
+    "genre": "Non-Fiction",
+    "rating": 4.2,
+    "description": "A personal account of the 1996 Mount Everest disaster. It details the harrowing events that led to the deaths of several climbers."
+  },
+  {
+    "title": "Wild",
+    "author": "Cheryl Strayed",
+    "pg": 315,
+    "copies": 27,
+    "year": 2012,
+    "genre": "Non-Fiction",
+    "rating": 4.0,
+    "description": "A woman hikes the Pacific Crest Trail alone to heal from personal tragedy. The journey helps her find strength and self-acceptance."
+  },
+  {
+    "title": "Eat, Pray, Love",
+    "author": "Elizabeth Gilbert",
+    "pg": 334,
+    "copies": 32,
+    "year": 2006,
+    "genre": "Non-Fiction",
+    "rating": 3.6,
+    "description": "A woman travels to Italy, India, and Indonesia to find balance after a divorce. She explores pleasure, devotion, and love."
+  },
+  {
+    "title": "The Glass Castle",
+    "author": "Jeannette Walls",
+    "pg": 288,
+    "copies": 40,
+    "year": 2005,
+    "genre": "Non-Fiction",
+    "rating": 4.3,
+    "description": "A memoir about growing up in a dysfunctional but vibrant family. The author overcomes poverty to build a successful life."
+  },
+  {
+    "title": "Bossypants",
+    "author": "Tina Fey",
+    "pg": 277,
+    "copies": 34,
+    "year": 2011,
+    "genre": "Non-Fiction",
+    "rating": 3.9,
+    "description": "A comedic memoir by the SNL star about her life in comedy. She shares insights on feminism and show business."
+  },
+  {
+    "title": "Born to Run",
+    "author": "Christopher McDougall",
+    "pg": 287,
+    "copies": 13,
+    "year": 2009,
+    "genre": "Non-Fiction",
+    "rating": 4.3,
+    "description": "The author investigates the Tarahumara tribe's ability to run long distances without injury. It popularized the barefoot running movement."
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "pg": 499,
+    "copies": 41,
+    "year": 2011,
+    "genre": "Psychology",
+    "rating": 4.2,
+    "description": "A Nobel laureate explores the two systems that drive human thought. He contrasts intuitive, fast thinking with slow, logical deliberation."
+  },
+  {
+    "title": "Quiet",
+    "author": "Susan Cain",
+    "pg": 333,
+    "copies": 26,
+    "year": 2012,
+    "genre": "Non-Fiction",
+    "rating": 4.1,
+    "description": "The book argues for the power of introverts in a world that favors extroversion. It explores how society undervalues quiet contemplation."
+  },
+  {
+    "title": "Outliers",
+    "author": "Malcolm Gladwell",
+    "pg": 309,
+    "copies": 39,
+    "year": 2008,
+    "genre": "Non-Fiction",
+    "rating": 4.2,
+    "description": "Gladwell examines the factors that contribute to high levels of success. He discusses the 10,000-hour rule and the importance of opportunity."
+  },
+  {
+    "title": "The Tipping Point",
+    "author": "Malcolm Gladwell",
+    "pg": 301,
+    "copies": 21,
+    "year": 2000,
+    "genre": "Non-Fiction",
+    "rating": 3.9,
+    "description": "The book explores how small changes can cause big social epidemics. It identifies key types of people who spread ideas."
+  },
+  {
+    "title": "Blink",
+    "author": "Malcolm Gladwell",
+    "pg": 296,
+    "copies": 25,
+    "year": 2005,
+    "genre": "Non-Fiction",
+    "rating": 3.9,
+    "description": "An exploration of rapid cognition and the power of thinking without thinking. It analyzes how we make split-second decisions."
+  },
+  {
+    "title": "Freakonomics",
+    "author": "Steven D. Levitt",
+    "pg": 320,
+    "copies": 36,
+    "year": 2005,
+    "genre": "Non-Fiction",
+    "rating": 3.9,
+    "description": "An economist applies economic theory to diverse and odd subjects. Topics range from sumo wrestling to crime rates."
+  },
+  {
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "pg": 381,
+    "copies": 49,
+    "year": 1989,
+    "genre": "Self-Help",
+    "rating": 4.1,
+    "description": "A holistic approach to personal and professional effectiveness. It emphasizes character and principles over personality tactics."
+  },
+  {
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "pg": 288,
+    "copies": 47,
+    "year": 1936,
+    "genre": "Self-Help",
+    "rating": 4.2,
+    "description": "A classic guide on handling people and improving social skills. It teaches how to make people like you and win them to your way of thinking."
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "pg": 336,
+    "copies": 33,
+    "year": 1997,
+    "genre": "Self-Help",
+    "rating": 4.0,
+    "description": "The author contrasts the financial advice of his two fathers. It advocates for financial literacy and investing in assets."
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "pg": 320,
+    "copies": 50,
+    "year": 2018,
+    "genre": "Self-Help",
+    "rating": 4.8,
+    "description": "A practical guide to breaking bad habits and building good ones. It emphasizes small changes that compound over time."
+  },
+  {
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "pg": 371,
+    "copies": 28,
+    "year": 2012,
+    "genre": "Self-Help",
+    "rating": 4.1,
+    "description": "The book explores the science behind why habits exist and how they can be changed. It looks at habits in individuals, companies, and societies."
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "pg": 212,
+    "copies": 44,
+    "year": 2016,
+    "genre": "Self-Help",
+    "rating": 3.9,
+    "description": "A self-help book that argues against toxic positivity. It suggests that embracing our limitations is the source of empowerment."
+  },
+  {
+    "title": "Daring Greatly",
+    "author": "Brené Brown",
+    "pg": 287,
+    "copies": 31,
+    "year": 2012,
+    "genre": "Self-Help",
+    "rating": 4.2,
+    "description": "Brown argues that vulnerability is not a weakness but a measure of courage. The book explores how to engage with the world wholehearted."
+  },
+  {
+    "title": "Girl, Wash Your Face",
+    "author": "Rachel Hollis",
+    "pg": 240,
+    "copies": 15,
+    "year": 2018,
+    "genre": "Self-Help",
+    "rating": 3.6,
+    "description": "The author debunks the lies that women tell themselves. She encourages women to take control of their lives and dreams."
+  },
+  {
+    "title": "You Are a Badass",
+    "author": "Jen Sincero",
+    "pg": 256,
+    "copies": 22,
+    "year": 2013,
+    "genre": "Self-Help",
+    "rating": 3.9,
+    "description": "A guide to stopping self-doubt and living an awesome life. It mixes humor with advice on personal transformation."
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "pg": 165,
+    "copies": 45,
+    "year": 1946,
+    "genre": "Non-Fiction",
+    "rating": 4.4,
+    "description": "A psychiatrist describes his survival in Nazi concentration camps. He argues that finding meaning in suffering is the primary human drive."
+  },
+  {
+    "title": "Night",
+    "author": "Elie Wiesel",
+    "pg": 116,
+    "copies": 40,
+    "year": 1956,
+    "genre": "Non-Fiction",
+    "rating": 4.3,
+    "description": "A memoir of a teenager's survival in Nazi death camps. It explores the loss of faith and the horror of the Holocaust."
+  },
+  {
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "pg": 283,
+    "copies": 48,
+    "year": 1947,
+    "genre": "Non-Fiction",
+    "rating": 4.1,
+    "description": "The journal of a Jewish girl hiding from the Nazis in Amsterdam. It documents her fears, hopes, and coming of age in confinement."
+  },
+  {
+    "title": "Hiroshima",
+    "author": "John Hersey",
+    "pg": 152,
+    "copies": 18,
+    "year": 1946,
+    "genre": "Non-Fiction",
+    "rating": 4.2,
+    "description": "A journalistic account of six survivors of the atomic bombing. It depicts the immediate aftermath and long-term effects of the blast."
+  },
+  {
+    "title": "In Cold Blood",
+    "author": "Truman Capote",
+    "pg": 343,
+    "copies": 23,
+    "year": 1965,
+    "genre": "Non-Fiction",
+    "rating": 4.1,
+    "description": "A non-fiction novel detailing the murder of the Clutter family in Kansas. It explores the psychology of the killers."
+  },
+  {
+    "title": "The Devil in the White City",
+    "author": "Erik Larson",
+    "pg": 447,
+    "copies": 29,
+    "year": 2003,
+    "genre": "Non-Fiction",
+    "rating": 4.0,
+    "description": "The true story of the 1893 World's Fair and the serial killer H.H. Holmes. It contrasts the brilliance of the fair with the darkness of the crimes."
+  },
+  {
+    "title": "Midnight in the Garden of Good and Evil",
+    "author": "John Berendt",
+    "pg": 388,
+    "copies": 16,
+    "year": 1994,
+    "genre": "Non-Fiction",
+    "rating": 3.9,
+    "description": "A true crime story set in Savannah, Georgia. It involves a murder trial and a cast of eccentric local characters."
+  },
+  {
+    "title": "Tuesdays with Morrie",
+    "author": "Mitch Albom",
+    "pg": 192,
+    "copies": 41,
+    "year": 1997,
+    "genre": "Non-Fiction",
+    "rating": 4.1,
+    "description": "A memoir about the author's weekly visits to his dying college professor. They discuss life, love, and the meaning of death."
+  },
+  {
+    "title": "The Five People You Meet in Heaven",
+    "author": "Mitch Albom",
+    "pg": 196,
+    "copies": 33,
+    "year": 2003,
+    "genre": "Fiction",
+    "rating": 3.9,
+    "description": "A maintenance man dies trying to save a girl and goes to heaven. He meets five people who explain the meaning of his life."
+  },
+  {
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "pg": 319,
+    "copies": 37,
+    "year": 2001,
+    "genre": "Fantasy",
+    "rating": 3.9,
+    "description": "A boy survives a shipwreck and shares a lifeboat with a Bengal tiger. The story explores faith, survival, and storytelling."
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "pg": 163,
+    "copies": 50,
+    "year": 1988,
+    "genre": "Fantasy",
+    "rating": 3.9,
+    "description": "A shepherd boy travels to Egypt in search of a treasure. He learns to listen to his heart and read the omens of the world."
+  },
+  {
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "pg": 152,
+    "copies": 25,
+    "year": 1922,
+    "genre": "Classic",
+    "rating": 4.0,
+    "description": "A man in ancient India journeys to find spiritual enlightenment. He experiences asceticism, worldly pleasure, and eventually wisdom."
+  },
+  {
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "pg": 123,
+    "copies": 21,
+    "year": 1942,
+    "genre": "Classic",
+    "rating": 4.0,
+    "description": "An emotionally detached man commits a murder on a beach. He is tried not just for the crime, but for his lack of feeling."
+  },
+  {
+    "title": "The Plague",
+    "author": "Albert Camus",
+    "pg": 308,
+    "copies": 12,
+    "year": 1947,
+    "genre": "Classic",
+    "rating": 4.0,
+    "description": "A plague sweeps through the French Algerian city of Oran. The novel examines human resilience and solidarity in the face of absurdity."
+  },
+  {
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "pg": 417,
+    "copies": 30,
+    "year": 1967,
+    "genre": "Fantasy",
+    "rating": 4.1,
+    "description": "The multi-generational story of the Buendía family in the town of Macondo. It blends reality with magical elements."
+  },
+  {
+    "title": "Love in the Time of Cholera",
+    "author": "Gabriel García Márquez",
+    "pg": 348,
+    "copies": 19,
+    "year": 1985,
+    "genre": "Romance",
+    "rating": 3.9,
+    "description": "A man waits over fifty years to profess his love to a woman. The novel explores love, aging, and obsession."
+  },
+  {
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "pg": 324,
+    "copies": 17,
+    "year": 1987,
+    "genre": "Historical",
+    "rating": 3.8,
+    "description": "An escaped slave is haunted by the ghost of the daughter she killed to save from slavery. It deals with the trauma of the past."
+  },
+  {
+    "title": "The Bluest Eye",
+    "author": "Toni Morrison",
+    "pg": 216,
+    "copies": 14,
+    "year": 1970,
+    "genre": "Historical",
+    "rating": 4.0,
+    "description": "A young black girl prays for blue eyes to be considered beautiful. The novel attacks the concept of beauty standards and racism."
+  },
+  {
+    "title": "Song of Solomon",
+    "author": "Toni Morrison",
+    "pg": 337,
+    "copies": 11,
+    "year": 1977,
+    "genre": "Historical",
+    "rating": 4.2,
+    "description": "Milkman Dead searches for his identity and family history. The journey takes him from the Rust Belt to the South."
+  },
+  {
+    "title": "The Color Purple",
+    "author": "Alice Walker",
+    "pg": 295,
+    "copies": 28,
+    "year": 1982,
+    "genre": "Historical",
+    "rating": 4.2,
+    "description": "An African American woman in the South finds her voice through letters to God. She overcomes abuse and bigotry to find independence."
+  },
+  {
+    "title": "I Know Why the Caged Bird Sings",
+    "author": "Maya Angelou",
+    "pg": 289,
+    "copies": 35,
+    "year": 1969,
+    "genre": "Non-Fiction",
+    "rating": 4.2,
+    "description": "Angelou's autobiography covering her childhood and trauma. It is a story of resilience and the power of literature."
+  },
+  {
+    "title": "Invisible Man",
+    "author": "Ralph Ellison",
+    "pg": 581,
+    "copies": 15,
+    "year": 1952,
+    "genre": "Classic",
+    "rating": 3.9,
+    "description": "An unnamed black man describes his journey through American society. He feels socially invisible due to the refusal of others to see him."
+  },
+  {
+    "title": "Native Son",
+    "author": "Richard Wright",
+    "pg": 504,
+    "copies": 13,
+    "year": 1940,
+    "genre": "Classic",
+    "rating": 4.0,
+    "description": "A young black man in 1930s Chicago commits a crime that seals his fate. The novel explores the systemic conditions of poverty and racism."
+  },
+  {
+    "title": "Their Eyes Were Watching God",
+    "author": "Zora Neale Hurston",
+    "pg": 231,
+    "copies": 26,
+    "year": 1937,
+    "genre": "Classic",
+    "rating": 3.9,
+    "description": "Janie Crawford returns to her town and narrates her life story. She seeks independence and love through three marriages."
+  },
+  {
+    "title": "Go Tell It on the Mountain",
+    "author": "James Baldwin",
+    "pg": 226,
+    "copies": 18,
+    "year": 1953,
+    "genre": "Classic",
+    "rating": 4.1,
+    "description": "A semi-autobiographical novel focusing on a teenager in 1930s Harlem. It explores religion, family, and repression."
+  },
+  {
+    "title": "Things Fall Apart",
+    "author": "Chinua Achebe",
+    "pg": 209,
+    "copies": 41,
+    "year": 1958,
+    "genre": "Historical",
+    "rating": 3.7,
+    "description": "A proud warrior struggles with the arrival of British colonizers in Nigeria. The novel depicts the clash between traditional culture and colonialism."
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "pg": 371,
+    "copies": 43,
+    "year": 2003,
+    "genre": "Historical",
+    "rating": 4.3,
+    "description": "A wealthy boy and the son of his father's servant are separated by history. One returns to Afghanistan to seek redemption for a past betrayal."
+  },
+  {
+    "title": "A Thousand Splendid Suns",
+    "author": "Khaled Hosseini",
+    "pg": 372,
+    "copies": 45,
+    "year": 2007,
+    "genre": "Historical",
+    "rating": 4.4,
+    "description": "Two women in Afghanistan form a bond amidst war and domestic violence. Their friendship helps them endure the brutality of the Taliban era."
+  },
+  {
+    "title": "The God of Small Things",
+    "author": "Arundhati Roy",
+    "pg": 321,
+    "copies": 22,
+    "year": 1997,
+    "genre": "Historical",
+    "rating": 3.9,
+    "description": "Twins in India have their lives destroyed by the 'Love Laws'. The story moves between their childhood and adulthood."
+  },
+  {
+    "title": "Midnight's Children",
+    "author": "Salman Rushdie",
+    "pg": 647,
+    "copies": 14,
+    "year": 1981,
+    "genre": "Fantasy",
+    "rating": 4.0,
+    "description": "Children born at the exact moment of India's independence have special powers. Their lives mirror the history of the new nation."
+  },
+  {
+    "title": "Life After Life",
+    "author": "Kate Atkinson",
+    "pg": 529,
+    "copies": 17,
+    "year": 2013,
+    "genre": "Historical",
+    "rating": 3.8,
+    "description": "Ursula Todd dies repeatedly and is reborn in 1910. She lives multiple versions of her life through the 20th century."
+  },
+  {
+    "title": "Atonement",
+    "author": "Ian McEwan",
+    "pg": 351,
+    "copies": 34,
+    "year": 2001,
+    "genre": "Historical",
+    "rating": 3.9,
+    "description": "A young girl's lie destroys the lives of her sister and lover. She spends the rest of her life seeking forgiveness through writing."
+  },
+  {
+    "title": "Never Let Me Go",
+    "author": "Kazuo Ishiguro",
+    "pg": 288,
+    "copies": 29,
+    "year": 2005,
+    "genre": "Science Fiction",
+    "rating": 3.8,
+    "description": "Students at a boarding school discover they are clones raised for organ donation. They grapple with their fate and human emotions."
+  },
+  {
+    "title": "The Remains of the Day",
+    "author": "Kazuo Ishiguro",
+    "pg": 258,
+    "copies": 16,
+    "year": 1989,
+    "genre": "Historical",
+    "rating": 4.1,
+    "description": "An English butler reflects on his life of service. He realizes the personal cost of his dedication to his employer."
+  },
+  {
+    "title": "Cloud Atlas",
+    "author": "David Mitchell",
+    "pg": 509,
+    "copies": 10,
+    "year": 2004,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "Six nested stories span different times and genres. The novel explores how individual lives impact one another across centuries."
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "pg": 287,
+    "copies": 23,
+    "year": 2006,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "A father and son walk through a post-apocalyptic America. They try to survive hunger and cold while keeping their humanity."
+  },
+  {
+    "title": "No Country for Old Men",
+    "author": "Cormac McCarthy",
+    "pg": 309,
+    "copies": 19,
+    "year": 2005,
+    "genre": "Thriller",
+    "rating": 4.1,
+    "description": "A man finds a drug deal gone wrong and takes the money. He is pursued by a ruthless hitman and an aging sheriff."
+  },
+  {
+    "title": "Blood Meridian",
+    "author": "Cormac McCarthy",
+    "pg": 337,
+    "copies": 12,
+    "year": 1985,
+    "genre": "Western",
+    "rating": 4.1,
+    "description": "A teenager joins a gang of scalp hunters on the border in the 1850s. The novel is known for its extreme violence and beautiful prose."
+  },
+  {
+    "title": "Lonesome Dove",
+    "author": "Larry McMurtry",
+    "pg": 843,
+    "copies": 36,
+    "year": 1985,
+    "genre": "Western",
+    "rating": 4.5,
+    "description": "Retired Texas Rangers drive a cattle herd to Montana. It is an epic tale of friendship and the end of the Old West."
+  },
+  {
+    "title": "True Grit",
+    "author": "Charles Portis",
+    "pg": 224,
+    "copies": 21,
+    "year": 1968,
+    "genre": "Western",
+    "rating": 4.1,
+    "description": "A teenage girl seeks revenge for her father's murder. She hires a tough U.S. Marshal to help her track the killer."
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "pg": 311,
+    "copies": 48,
+    "year": 1985,
+    "genre": "Science Fiction",
+    "rating": 4.1,
+    "description": "In a theocratic dictatorship, fertile women are enslaved as child-bearers. Offred narrates her struggle to survive and remember her past."
+  },
+  {
+    "title": "Alias Grace",
+    "author": "Margaret Atwood",
+    "pg": 460,
+    "copies": 15,
+    "year": 1996,
+    "genre": "Historical",
+    "rating": 4.0,
+    "description": "A doctor interviews a woman convicted of a double murder in 1843. He tries to determine if she is insane or a manipulator."
+  },
+  {
+    "title": "The Blind Assassin",
+    "author": "Margaret Atwood",
+    "pg": 521,
+    "copies": 13,
+    "year": 2000,
+    "genre": "Historical",
+    "rating": 3.9,
+    "description": "An elderly woman writes her memoir, weaving in a novel written by her dead sister. The story reveals family secrets and betrayal."
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "pg": 273,
+    "copies": 40,
+    "year": 2018,
+    "genre": "Romance",
+    "rating": 3.8,
+    "description": "Connell and Marianne drift in and out of each other's lives from school to college. It explores class dynamics and intimacy."
+  },
+  {
+    "title": "Conversations with Friends",
+    "author": "Sally Rooney",
+    "pg": 304,
+    "copies": 18,
+    "year": 2017,
+    "genre": "Fiction",
+    "rating": 3.7,
+    "description": "Two college students become involved with an older married couple. The relationships test their morals and friendships."
+  },
+  {
+    "title": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "pg": 338,
+    "copies": 37,
+    "year": 2017,
+    "genre": "Thriller",
+    "rating": 4.1,
+    "description": "The arrival of an artist and her daughter disrupts a planned community. A custody battle divides the town and exposes secrets."
+  },
+  {
+    "title": "Everything I Never Told You",
+    "author": "Celeste Ng",
+    "pg": 297,
+    "copies": 24,
+    "year": 2014,
+    "genre": "Thriller",
+    "rating": 3.9,
+    "description": "A mixed-race family deals with the death of their favorite daughter. They must confront the pressure and secrets that tore them apart."
+  },
+  {
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "pg": 368,
+    "copies": 50,
+    "year": 2018,
+    "genre": "Mystery",
+    "rating": 4.4,
+    "description": "A girl raises herself in the marshes of North Carolina. She becomes a suspect in a local murder investigation."
+  },
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "pg": 325,
+    "copies": 42,
+    "year": 2019,
+    "genre": "Thriller",
+    "rating": 4.1,
+    "description": "A famous painter shoots her husband and then refuses to speak. A psychotherapist becomes obsessed with uncovering her motive."
+  },
+  {
+    "title": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "pg": 323,
+    "copies": 38,
+    "year": 2015,
+    "genre": "Thriller",
+    "rating": 3.9,
+    "description": "An alcoholic commuter sees something suspicious during her daily train ride. She becomes entangled in a missing person case."
+  },
+  {
+    "title": "Big Little Lies",
+    "author": "Liane Moriarty",
+    "pg": 460,
+    "copies": 31,
+    "year": 2014,
+    "genre": "Mystery",
+    "rating": 4.2,
+    "description": "A murder at a school trivia night reveals the secrets of three mothers. It deals with domestic violence and bullying."
+  },
+  {
+    "title": "Sharp Objects",
+    "author": "Gillian Flynn",
+    "pg": 254,
+    "copies": 17,
+    "year": 2006,
+    "genre": "Thriller",
+    "rating": 3.9,
+    "description": "A reporter returns to her hometown to cover the murders of two girls. She must confront her own troubled past and family."
+  },
+  {
+    "title": "Room",
+    "author": "Emma Donoghue",
+    "pg": 321,
+    "copies": 25,
+    "year": 2010,
+    "genre": "Thriller",
+    "rating": 4.0,
+    "description": "A boy and his mother are held captive in a small room. The story is told from the boy's limited perspective."
+  },
+  {
+    "title": "The Lovely Bones",
+    "author": "Alice Sebold",
+    "pg": 328,
+    "copies": 20,
+    "year": 2002,
+    "genre": "Fantasy",
+    "rating": 3.8,
+    "description": "A murdered girl watches her family and killer from heaven. She struggles to let go while her family grieves."
+  },
+  {
+    "title": "The Secret Life of Bees",
+    "author": "Sue Monk Kidd",
+    "pg": 302,
+    "copies": 34,
+    "year": 2001,
+    "genre": "Historical",
+    "rating": 4.0,
+    "description": "A girl runs away from her abusive father to live with three beekeeping sisters. She uncovers the truth about her mother."
+  },
+  {
+    "title": "Water for Elephants",
+    "author": "Sara Gruen",
+    "pg": 335,
+    "copies": 26,
+    "year": 2006,
+    "genre": "Historical",
+    "rating": 4.1,
+    "description": "An old man recalls his time with a traveling circus during the Depression. He remembers the animals and the woman he loved."
+  },
+  {
+    "title": "All the Light We Cannot See",
+    "author": "Anthony Doerr",
+    "pg": 531,
+    "copies": 43,
+    "year": 2014,
+    "genre": "Historical",
+    "rating": 4.3,
+    "description": "A blind French girl and a German soldier's paths cross in occupied France. They try to survive the devastation of WWII."
+  },
+  {
+    "title": "The Nightingale",
+    "author": "Kristin Hannah",
+    "pg": 440,
+    "copies": 39,
+    "year": 2015,
+    "genre": "Historical",
+    "rating": 4.5,
+    "description": "Two sisters in France struggle to survive the German occupation. One joins the resistance while the other protects her family."
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "pg": 552,
+    "copies": 47,
+    "year": 2005,
+    "genre": "Historical",
+    "rating": 4.4,
+    "description": "Death narrates the story of a girl in Nazi Germany who steals books. She shares them with her neighbors during bombing raids."
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "pg": 393,
+    "copies": 22,
+    "year": 2018,
+    "genre": "Fantasy",
+    "rating": 4.3,
+    "description": "A retelling of the Greek myth of the witch Circe. Exiled to an island, she hones her magic and crosses paths with gods and mortals."
+  },
+  {
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "pg": 378,
+    "copies": 28,
+    "year": 2011,
+    "genre": "Historical",
+    "rating": 4.4,
+    "description": "A retelling of the Trojan War focusing on the romance between Achilles and Patroclus. Their bond is tested by prophecy and war."
+  },
+  {
+    "title": "American Gods",
+    "author": "Neil Gaiman",
+    "pg": 635,
+    "copies": 25,
+    "year": 2001,
+    "genre": "Fantasy",
+    "rating": 4.1,
+    "description": "An ex-con becomes a bodyguard for an incarnation of Odin. He travels across America gathering old gods for a war against new ones."
+  },
+  {
+    "title": "Good Omens",
+    "author": "Terry Pratchett",
+    "pg": 412,
+    "copies": 36,
+    "year": 1990,
+    "genre": "Fantasy",
+    "rating": 4.3,
+    "description": "An angel and a demon team up to prevent the apocalypse. They have misplaced the Antichrist and grown fond of Earth."
+  },
+  {
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "pg": 162,
+    "copies": 30,
+    "year": 2002,
+    "genre": "Fantasy",
+    "rating": 4.1,
+    "description": "A girl finds a door to an alternate world that seems better than her own. Her other mother tries to trap her there forever."
+  },
+  {
+    "title": "Stardust",
+    "author": "Neil Gaiman",
+    "pg": 248,
+    "copies": 16,
+    "year": 1999,
+    "genre": "Fantasy",
+    "rating": 4.1,
+    "description": "A young man travels into Faerie to retrieve a fallen star for his love. He discovers the star is a living woman."
+  },
+  {
+    "title": "The Ocean at the End of the Lane",
+    "author": "Neil Gaiman",
+    "pg": 181,
+    "copies": 21,
+    "year": 2013,
+    "genre": "Fantasy",
+    "rating": 4.0,
+    "description": "A man returns to his childhood home and remembers supernatural events. He recalls the strange women who lived down the lane."
+  },
+  {
+    "title": "Eleanor Oliphant Is Completely Fine",
+    "author": "Gail Honeyman",
+    "pg": 336,
+    "copies": 32,
+    "year": 2017,
+    "genre": "Fiction",
+    "rating": 4.3,
+    "description": "A socially awkward woman learns to open up after meeting a coworker. It is a story about loneliness and human connection."
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "pg": 337,
+    "copies": 41,
+    "year": 2012,
+    "genre": "Fiction",
+    "rating": 4.4,
+    "description": "A grumpy old man plans to end his life but is interrupted by new neighbors. He forms unlikely friendships that change him."
+  },
+  {
+    "title": "Beartown",
+    "author": "Fredrik Backman",
+    "pg": 418,
+    "copies": 14,
+    "year": 2016,
+    "genre": "Fiction",
+    "rating": 4.2,
+    "description": "A small town obsessed with hockey is torn apart by a violent act. The community must choose between loyalty and justice."
+  },
+  {
+    "title": "Anxious People",
+    "author": "Fredrik Backman",
+    "pg": 341,
+    "copies": 29,
+    "year": 2019,
+    "genre": "Fiction",
+    "rating": 4.2,
+    "description": "A failed bank robber takes a group of strangers hostage at an open house. They end up revealing their own anxieties and secrets."
+  },
+  {
+    "title": "Crazy Rich Asians",
+    "author": "Kevin Kwan",
+    "pg": 403,
+    "copies": 37,
+    "year": 2013,
+    "genre": "Romance",
+    "rating": 3.8,
+    "description": "A New Yorker travels to Singapore to meet her boyfriend's family. She discovers he is part of the country's ultra-wealthy elite."
+  },
+  {
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "author": "Taylor Jenkins Reid",
+    "pg": 389,
+    "copies": 49,
+    "year": 2017,
+    "genre": "Historical",
+    "rating": 4.5,
+    "description": "An aging Hollywood icon recounts her life and loves to a journalist. She reveals a secret that defined her career."
+  },
+  {
+    "title": "Daisy Jones & The Six",
+    "author": "Taylor Jenkins Reid",
+    "pg": 355,
+    "copies": 24,
+    "year": 2019,
+    "genre": "Historical",
+    "rating": 4.2,
+    "description": "An oral history of a fictional rock band's rise and fall in the 70s. It explores the chemistry between the lead singers."
+  },
+  {
+    "title": "Malibu Rising",
+    "author": "Taylor Jenkins Reid",
+    "pg": 369,
+    "copies": 18,
+    "year": 2021,
+    "genre": "Fiction",
+    "rating": 4.1,
+    "description": "Four famous siblings throw an epic party that ends in fire. The novel explores their family history and secrets."
+  },
+  {
+    "title": "Verity",
+    "author": "Colleen Hoover",
+    "pg": 314,
+    "copies": 44,
+    "year": 2018,
+    "genre": "Thriller",
+    "rating": 4.3,
+    "description": "A writer discovers a disturbing autobiography while finishing a famous author's series. She uncovers dark truths about the author's family."
+  },
+  {
+    "title": "It Ends with Us",
+    "author": "Colleen Hoover",
+    "pg": 376,
+    "copies": 46,
+    "year": 2016,
+    "genre": "Romance",
+    "rating": 4.3,
+    "description": "A woman falls for a neurosurgeon but faces echoes of her abusive past. She must make a difficult choice to break the cycle."
+  },
+  {
+    "title": "Ugly Love",
+    "author": "Colleen Hoover",
+    "pg": 336,
+    "copies": 20,
+    "year": 2014,
+    "genre": "Romance",
+    "rating": 4.0,
+    "description": "Two people agree to a physical relationship with no strings attached. They struggle to keep their emotions out of the arrangement."
+  },
+  {
+    "title": "Throne of Glass",
+    "author": "Sarah J. Maas",
+    "pg": 404,
+    "copies": 31,
+    "year": 2012,
+    "genre": "Fantasy",
+    "rating": 4.2,
+    "description": "An assassin competes to become the King's Champion. She uncovers a conspiracy that threatens her world."
+  },
+  {
+    "title": "A Court of Thorns and Roses",
+    "author": "Sarah J. Maas",
+    "pg": 419,
+    "copies": 35,
+    "year": 2015,
+    "genre": "Fantasy",
+    "rating": 4.2,
+    "description": "A huntress kills a wolf and is taken to a magical land as punishment. She falls in love with her captor, a Fae lord."
+  },
+  {
+    "title": "Six of Crows",
+    "author": "Leigh Bardugo",
+    "pg": 465,
+    "copies": 33,
+    "year": 2015,
+    "genre": "Fantasy",
+    "rating": 4.4,
+    "description": "A criminal prodigy assembles a team of outcasts for a dangerous heist. They attempt to break into an impregnable fortress."
+  },
+  {
+    "title": "Shadow and Bone",
+    "author": "Leigh Bardugo",
+    "pg": 358,
+    "copies": 27,
+    "year": 2012,
+    "genre": "Fantasy",
+    "rating": 3.9,
+    "description": "A soldier discovers she has a unique power that could save her country. She is whisked away to train with the magical Grisha elite."
+  },
+  {
+    "title": "Red Queen",
+    "author": "Victoria Aveyard",
+    "pg": 383,
+    "copies": 23,
+    "year": 2015,
+    "genre": "Fantasy",
+    "rating": 4.0,
+    "description": "In a world divided by blood color, a girl discovers she has powers despite being Red. She is forced to hide in plain sight among the Silvers."
+  },
+  {
+    "title": "The Cruel Prince",
+    "author": "Holly Black",
+    "pg": 370,
+    "copies": 29,
+    "year": 2018,
+    "genre": "Fantasy",
+    "rating": 4.1,
+    "description": "A human girl navigates the dangerous politics of the Faerie court. She schemes to gain power and protect her family."
+  },
+  {
+    "title": "An Ember in the Ashes",
+    "author": "Sabaa Tahir",
+    "pg": 446,
+    "copies": 19,
+    "year": 2015,
+    "genre": "Fantasy",
+    "rating": 4.3,
+    "description": "A slave and a soldier cross paths in a brutal empire. They fight for their freedom and the future of their people."
+  },
+  {
+    "title": "Station Eleven",
+    "author": "Emily St. John Mandel",
+    "pg": 333,
+    "copies": 25,
+    "year": 2014,
+    "genre": "Science Fiction",
+    "rating": 4.0,
+    "description": "A traveling symphony performs Shakespeare in a post-apocalyptic world. The novel moves between the pre-pandemic past and the future."
+  },
+  {
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "pg": 387,
+    "copies": 32,
+    "year": 2011,
+    "genre": "Fantasy",
+    "rating": 4.0,
+    "description": "Two magicians are bound in a competition within a mysterious circus. They fall in love, complicating the deadly game."
+  },
+  {
+    "title": "The Starless Sea",
+    "author": "Erin Morgenstern",
+    "pg": 498,
+    "copies": 12,
+    "year": 2019,
+    "genre": "Fantasy",
+    "rating": 3.9,
+    "description": "A graduate student finds a book describing his own life. He discovers a secret underground library filled with stories."
+  }
+]

@@ -32,11 +32,9 @@ class BookSearch
     genres = query[:genre]
 
     body = {
+      size: 100,
       query: {
         bool:{
-          must:{
-            match_all:{}
-          },
           should:[
             {
               match_phrase:{
@@ -53,7 +51,7 @@ class BookSearch
             },
             {
               match:{
-                description: {query: plain_query, boost:2 }
+                description: {query: query_clean, boost:2 }
               }
             },
             {
@@ -95,7 +93,7 @@ class BookSearch
           #   }
           # }
           ],
-          # minimum_should_match: 1
+          minimum_should_match: 1
         }
       },
       sort:[
@@ -107,7 +105,19 @@ class BookSearch
             order: "desc"
           }
         }
-      ]
+      ],
+      aggs: {
+        genres: {
+          terms: {
+            field: "genre"
+          }
+        },
+        authors: {
+          terms: {
+            field: "author.keyword"
+          }
+        }
+      }
     }
 
     should = body[:query][:bool][:should]
@@ -117,7 +127,7 @@ class BookSearch
           genre: {
             value: genre,
             case_insensitive: true,
-            boost: 3
+            boost: 5
           }
         }
       }
@@ -133,7 +143,10 @@ class BookSearch
       res['hits']['hits'].each do |hit|
         related_id << hit['_id']
       end
-      related_id
+      {
+        ids: related_id,
+        aggs: res['aggregations']
+      }
     rescue => error
       puts error
       error.to_json

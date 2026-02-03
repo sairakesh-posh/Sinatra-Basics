@@ -1,31 +1,18 @@
 require_relative '../platform/books'
 require_relative '../platform/json_parser_helper'
+require_relative '../services/user_service'
 
 class Controller < Sinatra::Base
+  include JWT_Helper
   def initialize(app = nil, **_kwargs)
     super
     @books = Books_Flow.new
+    @user_service = UserService.new
   end
 
   before do
     content_type :json
-    # if request.request_method == 'PUT' || request.request_method == 'POST'
-    #   begin
-    #     request.body.rewind
-    #     @data = JSON.parse(request.body.read)
-    #   rescue => e
-    #     halt(400, {
-    #       response: 'JSON format is expected',
-    #       error: e
-    #     }.to_json
-    #     )
-    #   end
-    # end
   end
-
-  # set :service, nil
-  # set :book_search_helper, nil
-  # set :books_helper, nil
 
   get '/' do
     status 200
@@ -35,7 +22,12 @@ class Controller < Sinatra::Base
   end
 
   get '/book' do
-    list = @books.get_books
+    pg = params[:pg]
+    if pg.nil?
+      list = @books.get_books(1)
+    else
+      list = @books.get_books(pg.to_i)
+    end
     if list.nil?
       {
         res: "No books available"
@@ -50,7 +42,8 @@ class Controller < Sinatra::Base
   end
 
   get '/book/:id' do
-    book = @books.get_book_by_id(params[:id])
+    username = authenticated?
+    book = @books.get_book_by_id(username, params[:id])
     if book.nil?
       status 400
       {
@@ -63,14 +56,8 @@ class Controller < Sinatra::Base
   end
 
   post '/book' do
+    authenticated_admin?
     @data = json_parser
-    # obj = Model.new(
-    #   settings.service.get_id,
-    #   @data['name'],
-    #   @data['ph_no'],
-    #   @data['email'],
-    #   @data['age'].to_i
-    # )
     book_new = @books.add_book(@data)
     if book_new[:err].nil?
       book_new.as_json.to_json
@@ -81,6 +68,7 @@ class Controller < Sinatra::Base
   end
 
   delete '/book/:id' do
+    authenticated_admin?
     if @books.delete_book(params[:id]) == true
       status 200
       {
@@ -95,6 +83,7 @@ class Controller < Sinatra::Base
   end
 
   patch '/book' do
+    authenticated_admin?
     @data = json_parser
     updated_book = @books.update_book(@data)
     if updated_book != false
@@ -111,14 +100,8 @@ class Controller < Sinatra::Base
   end
 
   put '/book' do
+    authenticated_admin?
     @data = json_parser
-    # obj = Model.new(
-    #   settings.service.get_id,
-    #   @data['name'],
-    #   @data['ph_no'],
-    #   @data['email'],
-    #   @data['age'].to_i
-    # )
     if @data['id'].nil?
       status 400
       {
@@ -135,11 +118,9 @@ class Controller < Sinatra::Base
     end
   end
 
-  # get '/test' do
-  #   @platform.test.to_json
-  # end
 
   get '/search' do
+    authenticated?
     begin
       @books.search(params[:query]).as_json.to_json
     rescue => error
@@ -149,4 +130,55 @@ class Controller < Sinatra::Base
       }.to_json
     end
   end
+
+
+  #User endpoints
+  post '/user/register' do
+    @data = json_parser
+    @data['role'] = 'user'
+    begin
+      res = @user_service.add_new_user(@data)
+      token = create_token(res)
+      status 200
+      {
+        res: token
+      }.to_json
+    rescue => error
+      status 400
+      {err: error}.to_json
+    end
+  end
+
+  post '/login' do
+    @data = json_parser
+    begin
+      res = @user_service.authenticate(@data)
+      token = create_token(res)
+      status 200
+      {
+        res: token
+      }.to_json
+    rescue => error
+      status 400
+      {err: error}.to_json
+    end
+  end
+
+  post '/admin/register' do
+    @data = json_parser
+    @data['role'] = 'admin'
+    begin
+      res = @user_service.add_new_user(@data)
+      token = create_token(res)
+      status 200
+      {
+        res: token
+      }.to_json
+    rescue => error
+      status 400
+      {err: error}.to_json
+    end
+  end
+
+
 end
