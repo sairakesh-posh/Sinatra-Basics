@@ -12,4 +12,8 @@ class RedisService
   def check_cache(username, book_id)
     @client.sismember("users:#{username}:recently_viewed", book_id)
   end
+
+  def get_all_books(username)
+    @client.smembers("users:#{username}:recently_viewed")
+  end
 end

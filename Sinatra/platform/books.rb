@@ -74,12 +74,29 @@ class Books_Flow
     end
   end
 
-  def search(query)
-    res = @search_helper.search(query)
+  def search(pg, query, username)
+    res = @search_helper.search(pg, query)
     ids = res[:ids]
     aggregations = res[:aggs]
     books = @service.find_multiple(ids)
     books << aggregations
+    viewed = @redis_service.get_all_books(username)
+
+    viewed.each do |id|
+      index = ids.index(id)
+      if index.nil?
+        next
+      end
+      books[index]['viewed'] = true
+    end
+    # books.each_with_index do |book, index|
+    #   if book['id'].nil?
+    #     next
+    #   end
+    #   if viewed.include?(book['id'].to_s)
+    #     books[index]['viewed'] = true
+    #   end
+    # end
     books
   end
 end

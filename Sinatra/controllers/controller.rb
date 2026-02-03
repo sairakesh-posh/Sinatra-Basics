@@ -120,9 +120,13 @@ class Controller < Sinatra::Base
 
 
   get '/search' do
-    authenticated?
+    username = authenticated?
+    pg = params[:pg].to_i
+    if pg <= 0
+      pg = 1
+    end
     begin
-      @books.search(params[:query]).as_json.to_json
+      @books.search(pg, params[:query], username).as_json.to_json
     rescue => error
       puts error
       {

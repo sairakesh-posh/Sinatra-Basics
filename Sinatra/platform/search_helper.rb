@@ -23,12 +23,12 @@ class SearchHelper
     @search.index(book)
   end
 
-  def search(query)
+  def search(pg, query)
     body = {
       query: query,
       genre: genre_parser(query)
     }
-    @search.search(body)
+    @search.search(pg, body)
   end
 
   def genre_parser(query)

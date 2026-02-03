@@ -26,13 +26,14 @@ class BookSearch
     nil
   end
 
-  def search(query)
+  def search(pg, query)
     query_clean = query_cleaner(query[:query])
     plain_query = query[:query]
     genres = query[:genre]
 
     body = {
-      size: 100,
+      from: 15 * (pg-1),
+      size: 15,
       query: {
         bool:{
           should:[
@@ -145,14 +146,14 @@ class BookSearch
       end
       {
         ids: related_id,
-        aggs: res['aggregations']
+        aggs: res['aggregations'],
+        size: res['hits']['total']['value']
       }
     rescue => error
       puts error
       error.to_json
     end
   end
-
 
   #Query cleaning is not preferred as it affects the match_phrase working
   def query_cleaner(query)
