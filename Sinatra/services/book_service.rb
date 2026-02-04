@@ -88,14 +88,8 @@ class Service
 
   def find_multiple(related_ids)
     related_books = Book.where(_id: {'$in' => related_ids}).to_a
-    # related_ids.each do |id|
-    #     book = find_by_id(id)
-    #     if book.nil?
-    #       puts "Book with #{id} not found"
-    #       next
-    #     end
-    #     related_books << book
-    # end
+
+    #Mongo doesn't give results in the order of the ids. It adds whatever it finds first so to make them in order of ES we add the key as id and sort them.
     books_by_ids = {}
     related_books.each do |book|
       books_by_ids[book.id.to_s] = book

@@ -75,20 +75,35 @@ class Books_Flow
   end
 
   def search(pg, query, username)
+    #Get ids from ES
     res = @search_helper.search(pg, query)
     ids = res[:ids]
     aggregations = res[:aggs]
+
+    #Fetch books from mongo
     books = @service.find_multiple(ids)
     books << aggregations
-    viewed = @redis_service.get_all_books(username)
 
-    viewed.each do |id|
-      index = ids.index(id)
-      if index.nil?
+    #Refresh Redis
+    @redis_service.refresh_cache(username)
+
+    #Get books which are recently viewed by user
+    viewed = @redis_service.check_cache(username, ids)
+    viewed.each_with_index do |view, ind|
+      if view.nil?
         next
       end
-      books[index]['viewed'] = true
+      books[ind]['viewed'] = true
     end
+    # viewed = @redis_service.get_all_books(username)
+    # viewed.each do |id|
+    #   index = ids.index(id)
+    #   if index.nil?
+    #     next
+    #   end
+    #   books[index]['viewed'] = true
+    # end
+
     # books.each_with_index do |book, index|
     #   if book['id'].nil?
     #     next
