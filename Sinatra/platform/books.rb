@@ -74,9 +74,21 @@ class Books_Flow
     end
   end
 
-  def search(pg, query, username)
+  def search(params, username)
+    if params[:query].nil?
+      raise "Invalid search query"
+    end
+    pg = params[:pg].to_i
+    if pg < 1
+      pg = 1
+    end
+    query = params[:query]
+    filter = {}
+    filter[:genres] = Array(params[:genre]) if params[:genre]
+    filter[:authors] = Array(params[:author]) if params[:author]
+
     #Get ids from ES
-    res = @search_helper.search(pg, query)
+    res = @search_helper.search(pg, query, filter)
     ids = res[:ids]
     aggregations = res[:aggs]
 
@@ -88,6 +100,9 @@ class Books_Flow
     @redis_service.refresh_cache(username)
 
     #Get books which are recently viewed by user
+    if ids.length < 1
+      raise "No books found"
+    end
     viewed = @redis_service.check_cache(username, ids)
     viewed.each_with_index do |view, ind|
       if view.nil?

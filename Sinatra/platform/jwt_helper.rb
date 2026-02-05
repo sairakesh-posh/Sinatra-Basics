@@ -19,6 +19,8 @@ module JWT_Helper
     begin
       token = request.env['HTTP_AUTHORIZATION'].split(' ').last
       data = JWT.decode(token, SECRET, true, algorithm: 'HS256')[0]
+    rescue JWT::ExpiredSignature
+      halt 401, {err: "Token has expired"}.to_json
     rescue => error
       nil
     end

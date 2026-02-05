@@ -23,10 +23,24 @@ class SearchHelper
     @search.index(book)
   end
 
-  def search(pg, query)
+  def search(pg, query, filter = nil)
+    filter_query = []
+    if filter != nil
+      filter_query << {
+        terms: {
+          genre: filter[:genres],
+        }
+      } if filter[:genres]
+      filter_query << {
+        terms: {
+          "author.keyword": filter[:authors],
+        }
+      } if filter[:authors]
+    end
     body = {
       query: query,
-      genre: genre_parser(query)
+      genre: genre_parser(query),
+      filter: filter_query
     }
     @search.search(pg, body)
   end

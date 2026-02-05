@@ -30,12 +30,14 @@ class BookSearch
     query_clean = query_cleaner(query[:query])
     plain_query = query[:query]
     genres = query[:genre]
-
+    puts pg
+    # puts query[:filter]
     body = {
       from: 15 * (pg-1),
       size: 15,
       query: {
         bool:{
+          # filter: query[:filter],
           should:[
             {
               match_phrase:{
@@ -77,22 +79,6 @@ class BookSearch
                 }
               }
             }
-          # {
-          #   term:{
-          #     genre: {
-          #       value: "Action",
-          #       # boost: 2
-          #     }
-          #   },
-          # },
-          # {
-          #   term:{
-          #     genre: {
-          #       value: "History",
-          #       # boost: 1
-          #     }
-          #   }
-          # }
           ],
           minimum_should_match: 1
         }
@@ -107,20 +93,28 @@ class BookSearch
           }
         }
       ],
+      post_filter:{
+        bool: {
+          filter: []
+        }
+      },
       aggs: {
         genres: {
           terms: {
-            field: "genre"
+            field: "genre",
+            size: 20
           }
         },
         authors: {
           terms: {
-            field: "author.keyword"
+            field: "author.keyword",
+            size: 20
           }
         }
       }
     }
 
+    body[:post_filter][:bool][:filter] = query[:filter] if query[:filter]
     should = body[:query][:bool][:should]
     genres.each do |genre|
       should << {
@@ -144,11 +138,17 @@ class BookSearch
       res['hits']['hits'].each do |hit|
         related_id << hit['_id']
       end
-      {
+      final_result = {
         ids: related_id,
-        aggs: res['aggregations'],
-        size: res['hits']['total']['value']
+        size: res['hits']['total']['value'],
+        aggs: {
+          genres: {},
+          authors: {}
+        }
       }
+      final_result[:aggs][:genres] = res['aggregations']['genres']['buckets'] if res['aggregations']['genres']
+      final_result[:aggs][:authors] = res['aggregations']['authors']['buckets'] if res['aggregations']['authors']
+      final_result
     rescue => error
       puts error
       error.to_json

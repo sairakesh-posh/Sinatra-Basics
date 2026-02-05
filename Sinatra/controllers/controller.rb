@@ -89,8 +89,6 @@ class Controller < Sinatra::Base
     if updated_book != false
       status 200
       updated_book.as_json.to_json
-      # settings.book_search_helper.update(@data['id'])
-      # settings.service.find_by_id(@data['id']).as_json.to_json
     else
       status 400
       {
@@ -121,12 +119,9 @@ class Controller < Sinatra::Base
 
   get '/search' do
     username = authenticated?
-    pg = params[:pg].to_i
-    if pg <= 0
-      pg = 1
-    end
+
     begin
-      @books.search(pg, params[:query], username).as_json.to_json
+      @books.search(params, username).as_json.to_json
     rescue => error
       puts error
       {
