@@ -1,33 +1,13 @@
 require_relative '../models/book_mongo'
 
 class Service
-  # @service = nil
-  # def initialize(database)
-  #   @db = database
-  # end
-  # def initialize(db)
-  #   @db = db
-  # end
-  # def self.get_instance
-  #   if @service.nil?
-  #     @service = Service.new
-  #   end
-  #   @service
-  # end
-
   def add(book)
     Book.create!(book)
   end
 
   def delete(id)
-    # begin
-      book = Book.find_by(id: id)
-      book.destroy
-    #   true
-    # rescue => error
-    #   puts error
-    #   false
-    # end
+    book = Book.find_by(id: id)
+    book.destroy
   end
 
   def print_all(pg)

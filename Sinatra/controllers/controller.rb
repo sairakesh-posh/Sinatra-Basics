@@ -14,6 +14,25 @@ class Controller < Sinatra::Base
     content_type :json
   end
 
+  before %r{/book(/.*)?} do
+    @username = authenticated?
+  end
+
+  before %r{/search(/.*)?} do
+    @username = authenticated?
+  end
+
+  before %r{/book} do
+    if request.request_method == 'GET'
+      next
+    end
+    authenticated_admin?
+  end
+
+  # error Mongoid::Errors::DocumentNotFound do
+  #   halt 400, {error: "Enter valid ID"}.to_json
+  # end
+
   get '/' do
     status 200
     {
@@ -42,8 +61,7 @@ class Controller < Sinatra::Base
   end
 
   get '/book/:id' do
-    username = authenticated?
-    book = @books.get_book_by_id(username, params[:id])
+    book = @books.get_book_by_id(@username, params[:id])
     if book.nil?
       status 400
       {
@@ -56,7 +74,6 @@ class Controller < Sinatra::Base
   end
 
   post '/book' do
-    authenticated_admin?
     @data = json_parser
     book_new = @books.add_book(@data)
     if book_new[:err].nil?
@@ -68,7 +85,6 @@ class Controller < Sinatra::Base
   end
 
   delete '/book/:id' do
-    authenticated_admin?
     if @books.delete_book(params[:id]) == true
       status 200
       {
@@ -83,7 +99,6 @@ class Controller < Sinatra::Base
   end
 
   patch '/book' do
-    authenticated_admin?
     @data = json_parser
     updated_book = @books.update_book(@data)
     if updated_book != false
@@ -98,7 +113,6 @@ class Controller < Sinatra::Base
   end
 
   put '/book' do
-    authenticated_admin?
     @data = json_parser
     if @data['id'].nil?
       status 400
@@ -118,10 +132,8 @@ class Controller < Sinatra::Base
 
 
   get '/search' do
-    username = authenticated?
-
     begin
-      @books.search(params, username).as_json.to_json
+      @books.search(params, @username).as_json.to_json
     rescue => error
       puts error
       {
